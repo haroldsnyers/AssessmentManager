@@ -21,6 +21,13 @@ class mainclassTest {
 	}
 
 	@Test
+	void testLink(){
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		InputStream is = loader.getResourceAsStream("src/files/encoder_data.txt");
+		Scanner in = new Scanner(is);
+	}
+
+	/*@Test
 	void testEncoder()
 	{
 		Teacher combe=new Teacher("Combefis", 115, "YOLO");
@@ -62,6 +69,6 @@ class mainclassTest {
 		InputStream is = loader.getResourceAsStream("src/files/data_stats.txt");
 		Scanner in = new Scanner(is);
 		assertEquals(mainclass.statistics_display(combe,"C#", in),2);
-	}
+	}*/
 
 }
