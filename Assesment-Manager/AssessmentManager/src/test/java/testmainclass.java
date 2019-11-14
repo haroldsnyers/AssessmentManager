@@ -1,4 +1,4 @@
-import static junit.framework.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.Scanner;
@@ -29,7 +29,7 @@ class testmainclass {
 		combe.addStudToCourse(Yan, "c#");
 		
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("encoder_data.txt");
+		InputStream is = loader.getResourceAsStream("src/files/encoder_data.txt");
 		Scanner in = new Scanner(is);
 		
 		assertEquals(mainclass.encoder(combe,"c#",in),0);
@@ -40,9 +40,7 @@ class testmainclass {
 	void testStatisticsDisplay(){
 		Teacher combe=new Teacher("Combefis", 115, "YOLO");
 		Course csharpCourse=new Course("Csharp","C#",5);
-		
 
-		
 		combe.addCourse(csharpCourse);
 		
 		Student JuKi=new Student("Kirstein","Julien", 16000);
@@ -59,10 +57,9 @@ class testmainclass {
 		combe.addStudToCourse(Yan, "C#");
 		
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("data_stats.txt");
+		InputStream is = loader.getResourceAsStream("src/files/data_stats.txt");
 		Scanner in = new Scanner(is);
 		assertEquals(mainclass.statistics_display(combe,"C#", in),2);
-
 	}
 
 }
