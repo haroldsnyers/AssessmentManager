@@ -1,9 +1,11 @@
-import static junit.framework.Assert.assertEquals;
+
 import org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 import java.util.Scanner;
 import java.util.Random;
 import java.io.*;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class testmainclass {
 	
