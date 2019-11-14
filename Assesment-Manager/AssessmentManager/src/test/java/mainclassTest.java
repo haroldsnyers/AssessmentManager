@@ -7,7 +7,7 @@ import java.io.*;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class testmainclass {
+class mainclassTest {
 
 	@Test
 	void testIntInput(){
