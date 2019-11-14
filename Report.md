@@ -6,3 +6,6 @@
 ### generate project as Maeven project 
 - move all classes to assessmentManager>src>main>java
 - move testMainClass to assessmentManager>src>test>java
+
+### Class diagram
+- 
