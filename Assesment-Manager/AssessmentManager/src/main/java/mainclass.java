@@ -18,7 +18,6 @@ public class mainclass {
 		Course javaCourse=new Course("Java","ja",6);
 		
 
-		
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
