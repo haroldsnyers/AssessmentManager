@@ -8,7 +8,7 @@ public class Address implements Serializable {
     //public List<Course> courseList;
     Map<String, Course> coursesDico;
 
-    public Teacher(String city, int postalCode, String street, int number) {
+    public Address(String city, int postalCode, String street, int number) {
         this.city = city;
         this.postalCode = postalCode;
         this.street = street;

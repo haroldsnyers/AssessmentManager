@@ -14,7 +14,6 @@ public class Course implements Serializable {
 	public Map<Integer,Student> studentDico;
 	public Map<Integer,HashMap<Integer,Integer>>pointsDico;
 
-	
 	public Course(String courseName,String courseCode,int creditNumber) {
 		this.name=courseName;
 		this.code=courseCode;
@@ -44,11 +43,10 @@ public class Course implements Serializable {
 			    System.out.print("Stud "+e.getKey()+" : ");
 			    printNtimes(e.getValue(),"-");
 			    System.out.println(e.getValue());
-
 			}
 			return 2; 
 		}else {
-			System.out.println("Aucun points n'ont été encodé pour cette année.");
+			System.out.println("Aucun points n'ont ï¿½tï¿½ encodï¿½ pour cette annï¿½e.");
 			return 1;
 		}
 	}
@@ -58,9 +56,9 @@ public class Course implements Serializable {
 			int[] frequencies=new int[] {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 			for (Map.Entry<Integer,Integer> e : pointsDico.get(year).entrySet()){
 			    frequencies[e.getValue()-1]++;
-
 			}
-			System.out.println("Résultat  \\  Fréquence");
+
+			System.out.println("Rï¿½sultat  \\  Frï¿½quence");
 
 			int score=0;
 			for(int freq:frequencies) {
@@ -73,7 +71,7 @@ public class Course implements Serializable {
 			
 			return 2; 
 		}else {
-			System.out.println("Aucun points n'ont été encodés pour cette année.");
+			System.out.println("Aucun points n'ont ï¿½tï¿½ encodï¿½s pour cette annï¿½e.");
 			return 1;
 		}
 	}

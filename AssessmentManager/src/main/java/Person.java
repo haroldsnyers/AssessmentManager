@@ -6,7 +6,7 @@ public class Person implements Serializable {
     public String lastName;
     private Address address;
 
-    public Teacher(int ID, String firstName, String lastName) {
+    public Person(int ID, String firstName, String lastName) {
         this.ID = ID;
         this.firstName = firstName;
         this.lastName = lastName;

@@ -14,7 +14,6 @@ public class Teacher extends Person {
 		this.passwd= passwd;
 		coursesDico=new HashMap<String,Course>();
 		//courseList=new ArrayList<Course>();
-		
 	}
 	
 	public void addCourse(Course course) {
@@ -49,8 +48,7 @@ public class Teacher extends Person {
 		}else if(option==1) {
 			return thisCourse.displayHistogram(year);
 		}
-		return 2;	
-		
+		return 2;
 	}
 	
 	public boolean checkPasswd(String passwd) {
@@ -66,7 +64,6 @@ public class Teacher extends Person {
 		}
 		return 0;
 	}
-	
 	public String getCourseName(String code) {
 		return this.coursesDico.get(code).name;
 	}
