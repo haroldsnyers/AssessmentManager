@@ -78,4 +78,24 @@ class mainclassTest {
 		assertEquals(mainclass.statistics_display(combe,"C#", in),2);
 	}
 
+    @Test
+    void testSchool(){
+        Teacher combe=new Teacher("Combefis", 115, "YOLO");
+
+        Student JuKi=new Student("Kirstein","Julien", 16000);
+        Student JuGo=new Student("Gorjon","Julien", 16119);
+        Student Yan=new Student("Argyrakis","Yannis", 16001);
+
+        School ECAM = new School("ECAM", "place de l'alma");
+
+        ECAM.addStudent(JuKi);
+        ECAM.addStudent(JuGo);
+        ECAM.addStudent(Yan);
+
+        ECAM.addTeacher(combe);
+
+        System.out.println(ECAM.teachersDico);
+        System.out.println(ECAM.studentsDico);
+        System.out.println("\n");
+    }
 }
