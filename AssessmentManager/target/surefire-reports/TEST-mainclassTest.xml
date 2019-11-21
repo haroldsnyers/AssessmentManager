@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.04" tests="3" errors="2" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.033" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BE"/>
     <property name="sun.boot.library.path" value="D:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2019.2.3\jbr\bin"/>
-    <property name="sun.java.command" value="C:\Users\dtheo\AppData\Local\Temp\surefire15671241144688101149\surefirebooter5836598911967164668.jar C:\Users\dtheo\AppData\Local\Temp\surefire15671241144688101149 2019-11-14T11-28-44_161-jvmRun1 surefire9229604874491063696tmp surefire_03971752385134950707tmp"/>
+    <property name="sun.java.command" value="C:\Users\dtheo\AppData\Local\Temp\surefire15906876094202166745\surefirebooter10001310342485470090.jar C:\Users\dtheo\AppData\Local\Temp\surefire15906876094202166745 2019-11-21T10-37-11_667-jvmRun1 surefire5439922360207036354tmp surefire_012348411815195097694tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\target\test-classes;D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\target\classes;C:\Users\dtheo\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\dtheo\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\dtheo\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\dtheo\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\dtheo\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\dtheo\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\dtheo\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0-M1\junit-jupiter-5.6.0-M1.jar;C:\Users\dtheo\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0-M1\junit-jupiter-params-5.6.0-M1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\dtheo\AppData\Local\Temp\surefire15671241144688101149\surefirebooter5836598911967164668.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\dtheo\AppData\Local\Temp\surefire15906876094202166745\surefirebooter10001310342485470090.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.4+10-b304.69"/>
@@ -60,15 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testEncoder" classname="mainclassTest" time="0.024">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at mainclassTest.testEncoder(mainclassTest.java:35)
-</error>
-  </testcase>
-  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0">
-    <error type="java.lang.NullPointerException">java.lang.NullPointerException
-	at mainclassTest.testStatisticsDisplay(mainclassTest.java:63)
-</error>
-  </testcase>
-  <testcase name="testIntInput" classname="mainclassTest" time="0.01"/>
+  <testcase name="testEncoder" classname="mainclassTest" time="0.015"/>
+  <testcase name="testLink" classname="mainclassTest" time="0.004"/>
+  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0.006"/>
+  <testcase name="testIntInput" classname="mainclassTest" time="0.001"/>
 </testsuite>
