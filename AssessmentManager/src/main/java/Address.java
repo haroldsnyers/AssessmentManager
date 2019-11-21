@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-//import java.util.Dictionary;
-import java.util.List;
-import java.util.HashMap;
-import java.util.Map;
 import java.io.Serializable;
 
 public class Address implements Serializable {
