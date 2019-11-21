@@ -5,18 +5,12 @@ import java.util.HashMap;
 import java.util.Map;
 import java.io.Serializable;
 
-public class Teacher implements Serializable {
-	public String name;
-	public int ID_number;
+public class Teacher extends Person {
 	private String passwd;
 	//public List<Course> courseList;
 	Map<String,Course>coursesDico; 
 	
-
-	
-	public Teacher(String name,int ID,String passwd) {
-		this.name= name;
-		this.ID_number= ID;
+	public Teacher(String passwd) {
 		this.passwd= passwd;
 		coursesDico=new HashMap<String,Course>();
 		//courseList=new ArrayList<Course>();
