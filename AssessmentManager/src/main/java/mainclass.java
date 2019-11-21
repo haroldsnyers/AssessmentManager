@@ -39,8 +39,8 @@ public class mainclass {
 		combe.addStudToCourse(JuKi, "ja");
 		combe.addStudToCourse(JuGo, "ja");
 		combe.addStudToCourse(Yan, "ja");
-		
-		
+
+
 		
 		School ecam=new School("Ecam","Promenade de l'Alma");
 		ecam.addTeacher(combe);

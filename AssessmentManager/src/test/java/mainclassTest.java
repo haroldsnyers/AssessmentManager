@@ -1,6 +1,8 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import org.junit.jupiter.api.Assertions.*;
+
 import org.junit.jupiter.api.Test;
+
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 import java.util.Random;
 import java.io.*;
@@ -21,13 +23,18 @@ class mainclassTest {
 	}
 
 	@Test
-	void testLink(){
+	void testLink() throws FileNotFoundException {
+
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("src/files/encoder_data.txt");
-		Scanner in = new Scanner(is);
+		InputStream is1 = loader.getResourceAsStream("encoder_data.txt");//
+ 		Scanner is = new Scanner(is1);
+ 		System.out.println(is1);
+		System.out.println(is);
+
+
 	}
 
-	/*@Test
+	@Test
 	void testEncoder()
 	{
 		Teacher combe=new Teacher("Combefis", 115, "YOLO");
@@ -38,7 +45,7 @@ class mainclassTest {
 		combe.addStudToCourse(Yan, "c#");
 
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("src/files/encoder_data.txt");
+		InputStream is = loader.getResourceAsStream("encoder_data.txt");
 		Scanner in = new Scanner(is);
 
 		assertEquals(mainclass.encoder(combe,"c#",in),0);
@@ -66,9 +73,9 @@ class mainclassTest {
 		combe.addStudToCourse(Yan, "C#");
 
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("src/files/data_stats.txt");
+		InputStream is = loader.getResourceAsStream("data_stats.txt");
 		Scanner in = new Scanner(is);
 		assertEquals(mainclass.statistics_display(combe,"C#", in),2);
-	}*/
+	}
 
 }
