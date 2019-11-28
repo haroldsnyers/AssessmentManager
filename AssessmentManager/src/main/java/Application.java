@@ -1,10 +1,16 @@
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ *
+ */
 public class Application {
 
-	public static void main(String[] args) {
-		
+	/**
+	 * @param args
+	 */
+	public static void main(final String[] args) {
+
 		// Integer list manipulation example 
 		List<Integer> myList= new ArrayList<Integer>();
 		myList.add(1);
@@ -22,11 +28,11 @@ public class Application {
 		
 		// Teacher object
         Address address = new Address ("Bxl",1000,"Rue du test",10);
-		Teacher Combe=new Teacher(14,"seb","Combefis","PWD");
-		System.out.println(Combe.firstName);
+		Teacher combe = new Teacher(14,"seb","Combefis","PWD");
+		System.out.println(combe.firstName);
 		// Teacher object list 
-		List<Teacher> myTeachers= new ArrayList<Teacher>();
-		myTeachers.add(Combe);
+		List<Teacher> myTeachers = new ArrayList<Teacher>();
+		myTeachers.add(combe);
 		System.out.println(myTeachers.get(0).firstName);
 	}
 
