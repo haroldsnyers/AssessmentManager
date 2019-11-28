@@ -13,17 +13,17 @@ public class mainclass {
 
 	public static void main(String[] args) {
 		
-		Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
-		Course pythonCourse=new Course("Python","py",5);
-		Course javaCourse=new Course("Java","ja",6);
+		Teacher combe = new Teacher(115, "Seb","Combefis", "YOLO");
+		Course pythonCourse = new Course("Python","py",5);
+		Course javaCourse = new Course("Java","ja",6);
 		
 
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi=new Student("Kirstein","Julien", 16000);
-		Student JuGo=new Student("Gorjon","Julien", 16119);
-		Student Yan=new Student("Argyrakis","Yannis", 16001);
+		Student JuKi = new Student("Kirstein","Julien", 16000);
+		Student JuGo = new Student("Gorjon","Julien", 16119);
+		Student Yan = new Student("Argyrakis","Yannis", 16001);
 		
 		javaCourse.addPoints(2019, 16119, 16);
 		javaCourse.addPoints(2019, 16001, 15);
@@ -42,7 +42,7 @@ public class mainclass {
 
 
 		
-		School ecam=new School("Ecam","Promenade de l'Alma");
+		School ecam = new School("Ecam","Promenade de l'Alma");
 		ecam.addTeacher(combe);
 		ecam.addStudent(JuKi);
 		ecam.addStudent(JuGo);
@@ -84,54 +84,57 @@ public class mainclass {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("--- Assessment Manager 2000 ---");
 		// GET PROFESSEUR NAME HERE
-		Teacher teacher =combe;
+		Teacher teacher = combe;
 		System.out.println("Bonjour professeur !");
 		while (true)
 		{
 			//Course selection
-			while(state == 0)
+			while (state == 0)
 			{
 				System.out.print("Entrez le code du cours qui vous intéresse : | ");
 				teacher.displayCourses();
 				System.out.println("");
-				String codeInput=sc.nextLine();
-				if(!teacher.checkCourseCode(codeInput)) {
+				String codeInput = sc.nextLine();
+				if (!teacher.checkCourseCode(codeInput)) {
 					System.out.println("Erreur, veuillez entrez un code valide !");
-				}else{
+				} else {
 					state = 1;
-					courseCode=codeInput;
+					courseCode = codeInput;
 				}
 			}
 			
-			while(state == 1)
+			while (state == 1)
 			{
 				System.out.println("Cours sélectionné : " + teacher.getCourseName(courseCode));
 				System.out.println("Que souhaitez vous faire ? (0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
 				
 				options = checkIntInput(sc);
 				
-			  	if( options == 0 || options == 1 || options == 9 ){
+			  	if ( options == 0 || options == 1 || options == 9 ){
 			  		if (options == 9){
 			  			state = 0;
-			  		}else{
+			  		} else {
 						state = 2;
 			  		}
-				}else{
+				} else {
 					System.out.println("Erreur, veuillez entrez une commande valide !");
 					/*print ERROR*/  		
 				}
 			}
-			while(state == 2)
+			while (state == 2)
 			{
-				if(options == 0){
+				if (options == 0){
 					encoder(teacher,courseCode , sc);
 					state = 1;
 				}
-				else if(options == 1){
+				else if (options == 1) {
 					state = statistics_display(teacher,courseCode,sc);
 					// Stats et affichage // at the end -> histogramme or graph
 				}
-				else { state = 0;} //Retour au menu du cours
+				else
+					{
+						state = 0; //Retour au menu du cours
+					}
 			}            
 		}
 	}
@@ -152,13 +155,15 @@ public class mainclass {
 			points = 20;
 		}
 	
-		if(teach.encodePoints(courseCode, year, studID, points)==0) {
+		if (teach.encodePoints(courseCode, year, studID, points)==0) {
 			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistré avec succès !");
 			return 0;
-		}else {
-			System.out.println("Erreur : L'étudiant "+studID+" ne participe pas à ce cours.");
-			return 1;
 		}
+		else
+			{
+				System.out.println("Erreur : L'étudiant "+studID+" ne participe pas à ce cours.");
+				return 1;
+			}
 	}
 	
 	public static int statistics_display(Teacher teach,String courseCode , Scanner sc)
@@ -167,11 +172,11 @@ public class mainclass {
 		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
 		System.out.println("Affichage (0 = Graphe élèves | 1 = Histogramme des points | 2 = Evolution moyenne par année | 9 = Retour)");
 		option = checkIntInput(sc);
-		if(option == 9)
+		if (option == 9)
 		{
 			return 1;
 		}
-		else if(option == 2)
+		else if (option == 2)
 		{
 			System.out.println("Non disponible");
 			return 2;
@@ -184,7 +189,7 @@ public class mainclass {
 	public static int checkIntInput(Scanner sc){
 		int i = 0;
 		boolean validated = false;
-		while(!validated) {
+		while (!validated) {
 			try { 
 				i = Integer.parseInt(sc.nextLine());
 				validated = true;
