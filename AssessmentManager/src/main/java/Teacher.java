@@ -4,9 +4,18 @@ import java.util.List;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ *
+ */
 public class Teacher extends Person {
-	final String passwd;
+	/**
+	 *
+	 */
+	private String passwd;
 	//public List<Course> courseList;
+	/**
+	 *
+	 */
 	private Map<String, Course> coursesDico;
 
 	/**
@@ -15,7 +24,8 @@ public class Teacher extends Person {
 	 * @param lastName
 	 * @param passwd
 	 */
-	public Teacher(int id, String firstName, String lastName, String passwd) {
+	public Teacher(final int id, final String firstName, final String lastName,
+				   final String passwd) {
 		super(id, firstName, lastName);
 		this.passwd = passwd;
 		coursesDico = new HashMap<String, Course>();
@@ -35,7 +45,8 @@ public class Teacher extends Person {
 	 * @param stud
 	 * @param courseCode
 	 */
-	public void addStudToCourse(final Student stud, final String courseCode) {
+	public void addStudToCourse(final Student stud,
+								final String courseCode) {
 		coursesDico.get(courseCode).addStudent(stud);
 	}
 
@@ -70,7 +81,8 @@ public class Teacher extends Person {
 	 * @param year
 	 * @return
 	 */
-	public int displayStat(final String courseCode, final int option, final int year) {
+	public int displayStat(final String courseCode,
+						   final int option, final int year) {
 		Course thisCourse = coursesDico.get(courseCode);
 		if (option == 0) {
 			return thisCourse.displayGraph(year);
@@ -95,7 +107,8 @@ public class Teacher extends Person {
 	 * @param points
 	 * @return
 	 */
-	public int encodePoints(final String courseCode, final int year, final int id, final int points) {
+	public int encodePoints(final String courseCode, final int year,
+							final int id, final int points) {
 		Course thisCourse = coursesDico.get(courseCode);
 		if (thisCourse.hasStudent(id)) {
 			thisCourse.addPoints(year, id, points);
