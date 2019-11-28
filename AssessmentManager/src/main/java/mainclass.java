@@ -12,18 +12,17 @@ import java.io.ObjectOutputStream;
 public class mainclass {
 
 	public static void main(String[] args) {
-		int id = 115;
-		int creditPython = 5;
-		int creditJava = 6;
-		int JuKiId = 16000;
-		int JuGoId = 16119;
-		int YanId = 16001;
-		int Year = 2019;
-        int Note = 12;
-        int Note2 = 16;
-        int Note3 = 10;
-        int Note4 = 8;
-        int nulle = 0;
+		final int id = 115;
+		final int creditPython = 5;
+		final int creditJava = 6;
+		final int JuKiId = 16000;
+		final int JuGoId = 16119;
+		final int YanId = 16001;
+		final int Year = 2019;
+		final int Note = 12;
+		final int Note2 = 16;
+		final int Note3 = 10;
+		final int Note4 = 8;
 		Teacher combe = new Teacher(id, "Seb", "Combefis", "YOLO");
 		Course pythonCourse = new Course("Python", "py", creditPython);
 		Course javaCourse = new Course("Java", "ja", creditJava);
@@ -100,7 +99,7 @@ public class mainclass {
 		while (true)
 		{
 			//Course selection
-			while (state == nulle)
+			while (state == 0)
 			{
 				System.out.print("Entrez le code du cours qui vous intéresse : | ");
 				teacher.displayCourses();
