@@ -1,12 +1,11 @@
 import java.io.Serializable;
 
 public class Assessment implements Serializable {
-	public static float Result;
-  private static String AcademicYear;
+    private static float Result;
+    private static String AcademicYear;
 
-  public Assessment(float Result, String AcademicYear)
-  {  
-	  this.Result = Result;
-	  this.AcademicYear = AcademicYear;  
-  }
+    public Assessment(final float Result, final String AcademicYear) {
+        this.Result = Result;
+        this.AcademicYear = AcademicYear;
+    }
 }

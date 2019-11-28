@@ -24,7 +24,8 @@ public class Teacher extends Person {
 	 * @param lastName
 	 * @param passwd
 	 */
-	public Teacher(final int id, final String firstName, final String lastName,
+	public Teacher(final int id, final String firstName,
+				   final String lastName,
 				   final String passwd) {
 		super(id, firstName, lastName);
 		this.passwd = passwd;

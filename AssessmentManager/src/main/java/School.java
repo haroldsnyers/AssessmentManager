@@ -19,7 +19,7 @@ public class School implements Serializable {
 	  }
 	  
 	  public void addTeacher(Teacher teach) {
-		  this.teachersDico.put(teach.ID,teach);
+		  this.teachersDico.put(teach.id,teach);
 	  }
 	  
 	  public void addStudent(Student stud) {

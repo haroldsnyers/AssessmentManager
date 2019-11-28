@@ -3,28 +3,14 @@ import java.io.Serializable;
 /**
  *
  */
-public class Student implements Serializable {
-	/**
-	 *
-	 */
-	private final String name;
-	/**
-	 *
-	 */
-	private final String surname;
-	/**
-	 *
-	 */
-	private final int ID_number;
+public class Student extends Person {
 
 	/**
+     * @param id
 	 * @param name
 	 * @param surname
-	 * @param ID
 	 */
-	public Student(String name, String surname, int ID) {
-		this.name = name;
-		this.surname = surname;
-		this.ID_number = ID;
+	public Student(int id, String name, String surname) {
+		super(id, name, surname);
 	}
 }
