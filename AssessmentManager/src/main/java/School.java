@@ -2,27 +2,51 @@ import java.util.HashMap;
 import java.util.Map;
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class School implements Serializable {
-	  public static String name;
-	  private static String address;	
+	/**
+	 *
+	 */
+	  private static String name;
+	/**
+	 *
+	 */
+	  private static String address;
 	  //private static Teacher ListTeacher[];
-	  public Map<Integer, Student>studentsDico;
-	  public Map<Integer, Teacher>teachersDico;
+	/**
+	 *
+	 */
+	  private Map<Integer, Student>studentsDico;
+	/**
+	 *
+	 */
+	  private Map<Integer, Teacher>teachersDico;
 
-	  public School(String name, String address)
-	  {  
+	/**
+	 * @param name
+	 * @param address
+	 */
+	  public School(final String name, final String address) {
 		  this.name = name;
 		  this.address = address;
 		  this.studentsDico = new HashMap<Integer, Student>();
 		  this.teachersDico = new HashMap<Integer, Teacher>();
 		  //this.ListTeacher = ListTeacher;			  
 	  }
-	  
-	  public void addTeacher(Teacher teach) {
+
+	/**
+	 * @param teach
+	 */
+	  public void addTeacher(final Teacher teach) {
 		  this.teachersDico.put(teach.id, teach);
 	  }
-	  
-	  public void addStudent(Student stud) {
+
+	/**
+	 * @param stud
+	 */
+	  public void addStudent(final Student stud) {
 		  this.studentsDico.put(stud.ID_number, stud);
 	  }
 }
