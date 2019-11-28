@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.047" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.041" tests="6" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BE"/>
     <property name="sun.boot.library.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.2.4\jbr\bin"/>
-    <property name="sun.java.command" value="C:\Users\m_sca\AppData\Local\Temp\surefire5738160559548938414\surefirebooter949111677416941379.jar C:\Users\m_sca\AppData\Local\Temp\surefire5738160559548938414 2019-11-28T09-10-25_728-jvmRun1 surefire14345520791834254961tmp surefire_0252552215548236898tmp"/>
+    <property name="sun.java.command" value="C:\Users\m_sca\AppData\Local\Temp\surefire17889028411169573301\surefirebooter4041079206062925400.jar C:\Users\m_sca\AppData\Local\Temp\surefire17889028411169573301 2019-11-28T09-28-55_676-jvmRun1 surefire8487478476476928506tmp surefire_04577346388141837717tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\target\test-classes;C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\target\classes;C:\Users\m_sca\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\m_sca\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\m_sca\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\m_sca\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\m_sca\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\m_sca\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\m_sca\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0-M1\junit-jupiter-5.6.0-M1.jar;C:\Users\m_sca\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0-M1\junit-jupiter-params-5.6.0-M1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -34,7 +34,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\m_sca\AppData\Local\Temp\surefire5738160559548938414\surefirebooter949111677416941379.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\m_sca\AppData\Local\Temp\surefire17889028411169573301\surefirebooter4041079206062925400.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.4+10-b304.77"/>
@@ -60,10 +60,10 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testEncoder" classname="mainclassTest" time="0.031"/>
+  <testcase name="testEncoder" classname="mainclassTest" time="0.015"/>
   <testcase name="testAddress" classname="mainclassTest" time="0"/>
-  <testcase name="testLink" classname="mainclassTest" time="0"/>
-  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0"/>
-  <testcase name="testIntInput" classname="mainclassTest" time="0"/>
+  <testcase name="testLink" classname="mainclassTest" time="0.016"/>
+  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0.002"/>
+  <testcase name="testIntInput" classname="mainclassTest" time="0.004"/>
   <testcase name="testSchool" classname="mainclassTest" time="0"/>
 </testsuite>
