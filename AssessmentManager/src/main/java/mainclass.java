@@ -15,15 +15,15 @@ public class mainclass {
 		final int id = 115;
 		final int creditPython = 5;
 		final int creditJava = 6;
-		final int JuKiId = 16000;
-		final int JuGoId = 16119;
-		final int YanId = 16001;
-		final int Year = 2019;
-		final int Note = 12;
-		final int Note2 = 16;
-		final int Note3 = 10;
-		final int Note4 = 8;
-		Teacher combe = new Teacher(id, "Seb", "Combefis", "YOLO");
+		final int jukiid = 16000;
+		final int jugoid = 16119;
+		final int yanid = 16001;
+		final int year = 2019;
+		final int note = 12;
+		final int note2 = 16;
+		final int note3 = 10;
+		final int note4 = 8;
+		Teacher combe = new Teacher(id, "Seb", "Combefis", "yOLO");
 		Course pythonCourse = new Course("Python", "py", creditPython);
 		Course javaCourse = new Course("Java", "ja", creditJava);
 		
@@ -31,24 +31,24 @@ public class mainclass {
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi = new Student(JuKiId, "Kirstein", "Julien");
-		Student JuGo = new Student(JuGoId, "Gorjon", "Julien");
-		Student Yan = new Student(YanId, "Argyrakis", "Yannis");
+		Student JuKi = new Student(jukiid, "Kirstein", "Julien");
+		Student JuGo = new Student(jugoid, "Gorjon", "Julien");
+		Student yan = new Student(yanid, "Argyrakis", "yannis");
 		
-		javaCourse.addPoints(Year, JuGoId, Note);
-		javaCourse.addPoints(Year, YanId, Note2);
-		javaCourse.addPoints(Year, JuKiId, Note3);
+		javaCourse.addPoints(year, jugoid, note);
+		javaCourse.addPoints(year, yanid, note2);
+		javaCourse.addPoints(year, jukiid, note3);
 		
-		pythonCourse.addPoints(Year, JuGoId, Note2);
-		pythonCourse.addPoints(Year, YanId, Note4);
-		pythonCourse.addPoints(Year, JuKiId, Note);
+		pythonCourse.addPoints(year, jugoid, note2);
+		pythonCourse.addPoints(year, yanid, note4);
+		pythonCourse.addPoints(year, jukiid, note);
 		
 		combe.addStudToCourse(JuKi, "py");
 		combe.addStudToCourse(JuGo, "py");
-		combe.addStudToCourse(Yan, "py");
+		combe.addStudToCourse(yan, "py");
 		combe.addStudToCourse(JuKi, "ja");
 		combe.addStudToCourse(JuGo, "ja");
-		combe.addStudToCourse(Yan, "ja");
+		combe.addStudToCourse(yan, "ja");
 
 
 		
@@ -56,12 +56,12 @@ public class mainclass {
 		ecam.addTeacher(combe);
 		ecam.addStudent(JuKi);
 		ecam.addStudent(JuGo);
-		ecam.addStudent(Yan);
+		ecam.addStudent(yan);
 		
 		
 		
 // IN THE FUTUR, THIS WOULD BE USEFULL TO BE ABLE TO SAVE ALL THE OBJECTS IN A FILE AND RESTORE THEM TO USE THEM
-		// HERE IS THE WAY TO DO IT
+		// HERE IS THE WAy TO DO IT
 		
 		// SAVE THE OBJECT ECAM
 		try {
