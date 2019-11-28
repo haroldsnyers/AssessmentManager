@@ -25,57 +25,43 @@ public class mainclass {
 		Teacher combe = new Teacher(id, "Seb", "Combefis", "yOLO");
 		Course pythonCourse = new Course("Python", "py", creditPython);
 		Course javaCourse = new Course("Java", "ja", creditJava);
-		
-
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
-		
 		Student juki = new Student(jukiid, "Kirstein", "Julien");
 		Student jugo = new Student(jugoid, "Gorjon", "Julien");
 		Student yan = new Student(yanid, "Argyrakis", "yannis");
-		
 		javaCourse.addPoints(year, jugoid, note);
 		javaCourse.addPoints(year, yanid, note2);
 		javaCourse.addPoints(year, jukiid, note3);
-		
 		pythonCourse.addPoints(year, jugoid, note2);
 		pythonCourse.addPoints(year, yanid, note4);
 		pythonCourse.addPoints(year, jukiid, note);
-		
 		combe.addStudToCourse(juki, "py");
 		combe.addStudToCourse(jugo, "py");
 		combe.addStudToCourse(yan, "py");
 		combe.addStudToCourse(juki, "ja");
 		combe.addStudToCourse(jugo, "ja");
 		combe.addStudToCourse(yan, "ja");
-
-
-		
 		School ecam = new School("Ecam", "Promenade de l'Alma");
 		ecam.addTeacher(combe);
 		ecam.addStudent(juki);
 		ecam.addStudent(jugo);
 		ecam.addStudent(yan);
-		
-		
-		
-// IN THE FUTUR, THIS WOULD BE USEFULL TO BE ABLE TO SAVE ALL THE OBJECTS IN A FILE AND RESTORE THEM TO USE THEM
+		// IN THE FUTUR, THIS WOULD BE USEFULL TO BE ABLE
+		// TO SAVE ALL THE OBJECTS
+		// IN A FILE AND RESTORE THEM TO USE THEM
 		// HERE IS THE WAy TO DO IT
-		
 		// SAVE THE OBJECT ECAM
 		try {
 			FileOutputStream f = new FileOutputStream(new File("myObjects.txt"));
 			ObjectOutputStream o = new ObjectOutputStream(f);
-
 			// Write objects to file
 			o.writeObject(ecam);
-
 			o.close();
 			f.close();
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-			
 		// LOAD THE OBJECT ECAM
 		try {
 			FileInputStream is = new FileInputStream("myObjects.txt");
@@ -85,8 +71,7 @@ public class mainclass {
 			is.close();
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
-		}	
-
+		}
 		String courseCode = "";
 		int options = 0;
 		int state = 0;
@@ -109,13 +94,10 @@ public class mainclass {
 					courseCode = codeInput;
 				}
 			}
-			
 			while (state == 1) {
 				System.out.println("Cours sélectionné : " + teacher.getCourseName(courseCode));
 				System.out.println("Que souhaitez vous faire ? (0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
-				
 				options = checkIntInput(sc);
-				
 			  	if (options == 0 || options == 1 || options == 9) {
 			  		if (options == 9) {
 			  			state = 0;
@@ -157,7 +139,6 @@ public class mainclass {
 		if (points > 20) {
 			points = 20;
 		}
-	
 		if (teach.encodePoints(courseCode, year, studID, points) == 0) {
 			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistré avec succès !");
 			return 0;
@@ -180,7 +161,6 @@ public class mainclass {
 			return 2;
 		}
 		System.out.println("Entrez l'année qui vous intéresse :");
-
 		int year = checkIntInput(sc);
 		return teach.displayStat(courseCode, option, year);
 	}
