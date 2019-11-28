@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 //import java.util.Dictionary;
 //import java.util.Hashtable;
 import java.util.HashMap;
@@ -10,27 +8,26 @@ import java.io.Serializable;
  *
  */
 public class Course implements Serializable {
-
 	/**
 	 *
 	 */
-	public final String name;
+	private final String name;
 	/**
 	 *
 	 */
-	public final String code;
+	private final String code;
 	/**
 	 *
 	 */
-	public final int creditNumber;
+	private final int creditNumber;
 	/**
 	 *
 	 */
-	public Map<Integer, Student> studentDico;
+	private Map<Integer, Student> studentDico;
 	/**
 	 *
 	 */
-	public Map<Integer, HashMap<Integer, Integer>>pointsDico;
+	private Map<Integer, HashMap<Integer, Integer>>pointsDico;
 
 	/**
 	 * @param courseName
@@ -56,7 +53,7 @@ public class Course implements Serializable {
 	 * @param ID
 	 * @return
 	 */
-	public boolean hasStudent(final int ID) {return this.studentDico.containsKey(ID);
+	public boolean hasStudent(final int ID) { return this.studentDico.containsKey(ID);
 	}
 
 	/**
@@ -65,7 +62,7 @@ public class Course implements Serializable {
 	 * @param points
 	 */
 	public void addPoints(final int year, final int id, final int points) {
-		if(!pointsDico.containsKey(year)) {
+		if (!pointsDico.containsKey(year)) {
 			pointsDico.put(year, new HashMap<Integer, Integer>());
 		}
 		pointsDico.get(year).put(id, points);
@@ -76,10 +73,10 @@ public class Course implements Serializable {
 	 * @return
 	 */
 	public int displayGraph(final int year) {
-		if(pointsDico.containsKey(year)) {
+		if (pointsDico.containsKey(year)) {
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
 			    System.out.print("Stud " + e.getKey() + " : ");
-			    printNtimes(e.getValue(),"-");
+			    printNtimes(e.getValue(), "-");
 			    System.out.println(e.getValue());
 			}
 			return 2; 
@@ -95,19 +92,19 @@ public class Course implements Serializable {
 	 * @return
 	 */
 	public int displayHistogram(final int year) {
-		if(pointsDico.containsKey(year)) {
+		if (pointsDico.containsKey(year)) {
 			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()){
-			    frequencies[e.getValue()-1] ++;
+			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
+			    frequencies[e.getValue() - 1] ++;
 			}
 
 			System.out.println("R�sultat \\ " + "Fr�quence");
 
 			int score = 0;
-			for(int freq:frequencies) {
+			for (int freq:frequencies) {
 				if(score < 10)System.out.print(' ');
 				System.out.print(score);
-				printNtimes(freq,"-");
+				printNtimes(freq, "-");
 				System.out.println(' ');
 				score ++;
 			}
@@ -124,7 +121,7 @@ public class Course implements Serializable {
 	 * @param charact
 	 */
 	public void printNtimes(final int n, final String charact) {
-		for(int i=0; i<n; i++) {
+		for (int i = 0; i < n; i++) {
 			System.out.print(charact);
 		}
 	}
