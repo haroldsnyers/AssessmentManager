@@ -11,10 +11,25 @@ import java.io.Serializable;
  */
 public class Course implements Serializable {
 
+	/**
+	 *
+	 */
 	public String name;
+	/**
+	 *
+	 */
 	public String code;
+	/**
+	 *
+	 */
 	public int creditNumber;
+	/**
+	 *
+	 */
 	public Map<Integer, Student> studentDico;
+	/**
+	 *
+	 */
 	public Map<Integer, HashMap<Integer, Integer>>pointsDico;
 
 	/**
@@ -29,11 +44,18 @@ public class Course implements Serializable {
 		studentDico = new HashMap<Integer, Student>();
 		pointsDico = new HashMap<Integer, HashMap<Integer, Integer>>();
 	}
-	
+
+	/**
+	 * @param stud
+	 */
 	public void addStudent(Student stud) {
 		this.studentDico.put(stud.ID_number, stud);
 	}
-	
+
+	/**
+	 * @param ID
+	 * @return
+	 */
 	public boolean hasStudent(int ID) {
 		return this.studentDico.containsKey(ID);
 	}
@@ -99,7 +121,7 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param n
+	 * @param n       
 	 * @param charact
 	 */
 	public void printNtimes(int n, String charact) {
