@@ -8,7 +8,7 @@ import java.util.Map;
  *
  */
 public class Teacher extends Person {
-	
+
 	/**
 	 *
 	 */
@@ -68,7 +68,7 @@ public class Teacher extends Person {
 		return coursesDico.containsKey(code); //sc.nextLine());
 	}
 
-	/**
+	/**.
 	 * void
 	 */
 	public void displayCourses() {
