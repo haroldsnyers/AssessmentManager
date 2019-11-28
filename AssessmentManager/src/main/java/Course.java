@@ -15,11 +15,11 @@ public class Course implements Serializable {
 	public Map<Integer,HashMap<Integer,Integer>>pointsDico;
 
 	public Course(String courseName,String courseCode,int creditNumber) {
-		this.name=courseName;
-		this.code=courseCode;
-		this.creditNumber= creditNumber;
-		studentDico=new HashMap<Integer,Student>();
-		pointsDico=new HashMap<Integer,HashMap<Integer,Integer>>();
+		this.name = courseName;
+		this.code = courseCode;
+		this.creditNumber = creditNumber;
+		studentDico = new HashMap<Integer,Student>();
+		pointsDico = new HashMap<Integer,HashMap<Integer,Integer>>();
 	}
 	
 	public void addStudent(Student stud) {
