@@ -95,18 +95,18 @@ public class Course implements Serializable {
 		if (pointsDico.containsKey(year)) {
 			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
-			    frequencies[e.getValue() - 1] ++;
+			    frequencies[e.getValue() - 1]++;
 			}
 
 			System.out.println("R�sultat \\ " + "Fr�quence");
 
 			int score = 0;
 			for (int freq:frequencies) {
-				if(score < 10)System.out.print(' ');
+				if (score < 10)System.out.print(' ');
 				System.out.print(score);
 				printNtimes(freq, "-");
 				System.out.println(' ');
-				score ++;
+				score++;
 			}
 			return 2; 
 		}
