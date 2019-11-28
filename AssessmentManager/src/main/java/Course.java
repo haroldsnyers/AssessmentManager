@@ -56,8 +56,7 @@ public class Course implements Serializable {
 	 * @param ID
 	 * @return
 	 */
-	public boolean hasStudent(int ID) {
-		return this.studentDico.containsKey(ID);
+	public boolean hasStudent(int ID) {return this.studentDico.containsKey(ID);
 	}
 
 	/**
@@ -97,16 +96,16 @@ public class Course implements Serializable {
 	 */
 	public int displayHistogram(int year) {
 		if(pointsDico.containsKey(year)) {
-			int[] frequencies=new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
+			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()){
 			    frequencies[e.getValue()-1] ++;
 			}
 
-			System.out.println("R�sultat \\ " +  "Fr�quence");
+			System.out.println("R�sultat \\ " + "Fr�quence");
 
 			int score = 0;
 			for(int freq:frequencies) {
-				if(score < 10)System.out.print(' ');  // align with two digit numbers
+				if(score < 10)System.out.print(' ');
 				System.out.print(score);
 				printNtimes(freq,"-");
 				System.out.println(' ');
