@@ -8,7 +8,6 @@ import java.io.Serializable;
  *
  */
 public class Course implements Serializable {
-
 	/**
 	 *
 	 */
@@ -29,7 +28,6 @@ public class Course implements Serializable {
 	 *
 	 */
 	private Map<Integer, HashMap<Integer, Integer>>pointsDico;
-
 
 	/**
 	 * @param courseName
