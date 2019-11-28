@@ -30,9 +30,9 @@ public class Course implements Serializable {
 	private Map<Integer, HashMap<Integer, Integer>>pointsDico;
 
 	/**
-	 * @param courseName
-	 * @param courseCode
-	 * @param creditNumber
+	 * @param courseName oleqfzo
+	 * @param courseCode kls(aefgjn
+	 * @param creditNumber seoqgnfq
 	 */
 	public Course(final String courseName, final String courseCode, final int creditNumber) {
 		this.name = name;
@@ -43,23 +43,23 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param stud
+	 * @param stud ozrsqefn
 	 */
 	public void addStudent(final Student stud) {
 		this.studentDico.put(stud.ID_number, stud);
 	}
 
 	/**
-	 * @param ID
-	 * @return
+	 * @param ID oprszeqgp
+	 * @return opzesgqj
 	 */
 	public boolean hasStudent(final int ID) { return this.studentDico.containsKey(ID);
 	}
 
 	/**
-	 * @param year
-	 * @param id
-	 * @param points
+	 * @param year zsrolkaegj
+	 * @param id zrsgb-eodlv
+	 * @param points ksjegqb
 	 */
 	public void addPoints(final int year, final int id, final int points) {
 		if (!pointsDico.containsKey(year)) {
@@ -69,8 +69,8 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param year
-	 * @return
+	 * @param year zesqfkj
+	 * @return kjqzejbf
 	 */
 	public int displayGraph(final int year) {
 		if (pointsDico.containsKey(year)) {
@@ -88,25 +88,25 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param year
-	 * @return
+	 * @param year iuezrfh
+	 * @return soeiqyfjn
 	 */
 	public int displayHistogram(final int year) {
 		if (pointsDico.containsKey(year)) {
 			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
-			    frequencies[e.getValue() - 1] ++;
+			    frequencies[e.getValue() - 1]++;
 			}
 
 			System.out.println("R�sultat \\ " + "Fr�quence");
 
 			int score = 0;
 			for (int freq:frequencies) {
-				if(score < 10)System.out.print(' ');
+				if (score < 10)System.out.print(' ');
 				System.out.print(score);
 				printNtimes(freq, "-");
 				System.out.println(' ');
-				score ++;
+				score++;
 			}
 			return 2; 
 		}
@@ -117,8 +117,8 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param n
-	 * @param charact
+	 * @param n zersfgv(kljn
+	 * @param charact sdvkj
 	 */
 	public void printNtimes(final int n, final String charact) {
 		for (int i = 0; i < n; i++) {
