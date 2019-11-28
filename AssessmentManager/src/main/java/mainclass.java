@@ -31,9 +31,9 @@ public class mainclass {
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi = new Student("Kirstein", "Julien", JuKiId);
-		Student JuGo = new Student("Gorjon", "Julien", JuGoId);
-		Student Yan = new Student("Argyrakis", "Yannis", YanId);
+		Student JuKi = new Student(JuKiId, "Kirstein", "Julien");
+		Student JuGo = new Student(JuGoId, "Gorjon", "Julien");
+		Student Yan = new Student(YanId, "Argyrakis", "Yannis");
 		
 		javaCourse.addPoints(Year, JuGoId, Note);
 		javaCourse.addPoints(Year, YanId, Note2);
