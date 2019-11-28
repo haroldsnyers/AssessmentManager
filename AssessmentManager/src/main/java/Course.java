@@ -17,6 +17,11 @@ public class Course implements Serializable {
 	public Map<Integer, Student> studentDico;
 	public Map<Integer, HashMap<Integer, Integer>>pointsDico;
 
+	/**
+	 * @param courseName
+	 * @param courseCode
+	 * @param creditNumber
+	 */
 	public Course(String courseName, String courseCode, int creditNumber) {
 		this.name = courseName;
 		this.code = courseCode;
@@ -32,7 +37,12 @@ public class Course implements Serializable {
 	public boolean hasStudent(int ID) {
 		return this.studentDico.containsKey(ID);
 	}
-	
+
+	/**
+	 * @param year
+	 * @param id
+	 * @param points
+	 */
 	public void addPoints(int year, int id, int points) {
 		if(!pointsDico.containsKey(year)) {
 			pointsDico.put(year, new HashMap<Integer, Integer>());
@@ -41,7 +51,7 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param year 
+	 * @param year
 	 * @return
 	 */
 	public int displayGraph(int year) {
