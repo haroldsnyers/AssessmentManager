@@ -121,7 +121,7 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param n       
+	 * @param n
 	 * @param charact
 	 */
 	public void printNtimes(int n, String charact) {
