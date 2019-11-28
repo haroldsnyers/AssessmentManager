@@ -39,13 +39,14 @@ public class Course implements Serializable {
 	
 	public int displayGraph(int year) {
 		if(pointsDico.containsKey(year)) {
-			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()){
+			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
 			    System.out.print("Stud " + e.getKey() + " : ");
 			    printNtimes(e.getValue(),"-");
 			    System.out.println(e.getValue());
 			}
 			return 2; 
-		}else {
+		}
+		else {
 			System.out.println("Aucun points n'ont �t� encod� pour cette ann�e.");
 			return 1;
 		}
@@ -58,7 +59,7 @@ public class Course implements Serializable {
 			    frequencies[e.getValue()-1] ++;
 			}
 
-			System.out.println("R�sultat \\ Fr�quence");
+			System.out.println("R�sultat \\ " +  "Fr�quence");
 
 			int score = 0;
 			for(int freq:frequencies) {
@@ -68,9 +69,9 @@ public class Course implements Serializable {
 				System.out.println(' ');
 				score ++;
 			}
-			
 			return 2; 
-		}else {
+		}
+		else {
 			System.out.println("Aucun points n'ont �t� encod�s pour cette ann�e.");
 			return 1;
 		}
