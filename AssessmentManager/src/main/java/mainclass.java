@@ -13,17 +13,17 @@ public class mainclass {
 
 	public static void main(String[] args) {
 		
-		Teacher combe = new Teacher(115, "Seb","Combefis", "YOLO");
-		Course pythonCourse = new Course("Python","py",5);
-		Course javaCourse = new Course("Java","ja",6);
+		Teacher combe = new Teacher(115, "Seb", "Combefis", "YOLO");
+		Course pythonCourse = new Course("Python", "py", 5);
+		Course javaCourse = new Course("Java", "ja", 6);
 		
 
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi = new Student("Kirstein","Julien", 16000);
-		Student JuGo = new Student("Gorjon","Julien", 16119);
-		Student Yan = new Student("Argyrakis","Yannis", 16001);
+		Student JuKi = new Student("Kirstein", "Julien", 16000);
+		Student JuGo = new Student("Gorjon", "Julien", 16119);
+		Student Yan = new Student("Argyrakis", "Yannis", 16001);
 		
 		javaCourse.addPoints(2019, 16119, 16);
 		javaCourse.addPoints(2019, 16001, 15);
@@ -42,7 +42,7 @@ public class mainclass {
 
 
 		
-		School ecam = new School("Ecam","Promenade de l'Alma");
+		School ecam = new School("Ecam", "Promenade de l'Alma");
 		ecam.addTeacher(combe);
 		ecam.addStudent(JuKi);
 		ecam.addStudent(JuGo);
@@ -78,7 +78,7 @@ public class mainclass {
 			e.printStackTrace();
 		}	
 
-		String courseCode="";
+		String courseCode = "";
 		int options = 0;
 		int state = 0;
 		Scanner sc = new Scanner(System.in);
@@ -110,8 +110,8 @@ public class mainclass {
 				
 				options = checkIntInput(sc);
 				
-			  	if ( options == 0 || options == 1 || options == 9 ){
-			  		if (options == 9){
+			  	if (options == 0 || options == 1 || options == 9) {
+			  		if (options == 9) {
 			  			state = 0;
 			  		} else {
 						state = 2;
@@ -123,12 +123,12 @@ public class mainclass {
 			}
 			while (state == 2)
 			{
-				if (options == 0){
-					encoder(teacher,courseCode , sc);
+				if (options == 0) {
+					encoder(teacher, courseCode, sc);
 					state = 1;
 				}
 				else if (options == 1) {
-					state = statistics_display(teacher,courseCode,sc);
+					state = statistics_display(teacher, courseCode, sc);
 					// Stats et affichage // at the end -> histogramme or graph
 				}
 				else
@@ -138,7 +138,7 @@ public class mainclass {
 			}            
 		}
 	}
-	public static int encoder(Teacher teach, String courseCode , Scanner sc) 
+	public static int encoder(Teacher teach, String courseCode, Scanner sc)
 	{
 		int year;
 		int studID;
@@ -155,18 +155,18 @@ public class mainclass {
 			points = 20;
 		}
 	
-		if (teach.encodePoints(courseCode, year, studID, points)==0) {
+		if (teach.encodePoints(courseCode, year, studID, points) == 0) {
 			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistré avec succès !");
 			return 0;
 		}
 		else
 			{
-				System.out.println("Erreur : L'étudiant "+studID+" ne participe pas à ce cours.");
+				System.out.println("Erreur : L'étudiant " + studID + " ne participe pas à ce cours.");
 				return 1;
 			}
 	}
 	
-	public static int statistics_display(Teacher teach,String courseCode , Scanner sc)
+	public static int statistics_display(Teacher teach, String courseCode, Scanner sc)
 	{
 		int option = 0;
 		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
@@ -184,9 +184,9 @@ public class mainclass {
 		System.out.println("Entrez l'année qui vous intéresse :");
 
 		int year = checkIntInput(sc);
-		return teach.displayStat(courseCode,option,year);
+		return teach.displayStat(courseCode, option, year);
 	}
-	public static int checkIntInput(Scanner sc){
+	public static int checkIntInput(Scanner sc) {
 		int i = 0;
 		boolean validated = false;
 		while (!validated) {
@@ -194,7 +194,7 @@ public class mainclass {
 				i = Integer.parseInt(sc.nextLine());
 				validated = true;
 			}
-			catch(Exception e) {
+			catch (Exception e) {
 				System.out.println("Erreur, veuillez entrez un nombre !");
 			}
 		}
