@@ -6,6 +6,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.io.Serializable;
 
+/**
+ *
+ */
 public class Course implements Serializable {
 
 	public String name;
@@ -36,7 +39,11 @@ public class Course implements Serializable {
 		}
 		pointsDico.get(year).put(id, points);
 	}
-	
+
+	/**
+	 * @param year 
+	 * @return
+	 */
 	public int displayGraph(int year) {
 		if(pointsDico.containsKey(year)) {
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
@@ -51,7 +58,11 @@ public class Course implements Serializable {
 			return 1;
 		}
 	}
-	
+
+	/**
+	 * @param year
+	 * @return
+	 */
 	public int displayHistogram(int year) {
 		if(pointsDico.containsKey(year)) {
 			int[] frequencies=new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
@@ -76,7 +87,11 @@ public class Course implements Serializable {
 			return 1;
 		}
 	}
-	
+
+	/**
+	 * @param n
+	 * @param charact
+	 */
 	public void printNtimes(int n, String charact) {
 		for(int i=0; i<n; i++) {
 			System.out.print(charact);
