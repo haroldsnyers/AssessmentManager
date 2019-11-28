@@ -14,23 +14,23 @@ public class Course implements Serializable {
 	/**
 	 *
 	 */
-	public final String name;
+	private final String name;
 	/**
 	 *
 	 */
-	public final String code;
+	private final String code;
 	/**
 	 *
 	 */
-	public final int creditNumber;
+	private final int creditNumber;
 	/**
 	 *
 	 */
-	public Map<Integer, Student> studentDico;
+	private Map<Integer, Student> studentDico;
 	/**
 	 *
 	 */
-	public Map<Integer, HashMap<Integer, Integer>>pointsDico;
+	private Map<Integer, HashMap<Integer, Integer>>pointsDico;
 
 	/**
 	 * @param courseName
