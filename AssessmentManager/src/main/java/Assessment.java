@@ -14,7 +14,7 @@ public class Assessment implements Serializable {
     private static String AcademicYear;
 
     /**
-     * @param Result       
+     * @param Result
      * @param AcademicYear
      */
     public Assessment(final float Result, final String AcademicYear) {
