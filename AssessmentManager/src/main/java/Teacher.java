@@ -8,6 +8,7 @@ import java.util.Map;
  *
  */
 public class Teacher extends Person {
+	
 	/**
 	 *
 	 */
@@ -19,32 +20,32 @@ public class Teacher extends Person {
 	private Map<String, Course> coursesDico;
 
 	/**
-	 * @param id
-	 * @param firstName
-	 * @param lastName
-	 * @param passwd
+	 * @param id id
+	 * @param firstName firstName
+	 * @param lastName lastName
+	 * @param password password
 	 */
 	public Teacher(final int id, final String firstName,
 				   final String lastName,
-				   final String passwd) {
+				   final String password) {
 		super(id, firstName, lastName);
-		this.passwd = passwd;
+		this.passwd = password;
 		coursesDico = new HashMap<String, Course>();
 		//courseList=new ArrayList<Course>();
 	}
 
 	/**
-	 * @param course
+	 * @param course course
 	 */
 	public void addCourse(final Course course) {
 
-		coursesDico.put(course.code, course);
+		coursesDico.put(course.getCode(), course);
 		//courseList.add(course);
 	}
 
 	/**
-	 * @param stud
-	 * @param courseCode
+	 * @param stud stduent
+	 * @param courseCode course code
 	 */
 	public void addStudToCourse(final Student stud,
 								final String courseCode) {
@@ -52,7 +53,7 @@ public class Teacher extends Person {
 	}
 
 	/**
-	 * @return
+	 * @return courses list
 	 */
 	public List<Course> getCourseList() {
 		ArrayList<Course> coursesList = new ArrayList<>(coursesDico.values());
@@ -60,27 +61,27 @@ public class Teacher extends Person {
 	}
 
 	/**
-	 * @param code
-	 * @return
+	 * @param code code
+	 * @return courses dico
 	 */
 	public boolean checkCourseCode(final String code) { //Scanner sc) {
 		return coursesDico.containsKey(code); //sc.nextLine());
 	}
 
 	/**
-	 *
+	 * void
 	 */
 	public void displayCourses() {
 		for (Map.Entry<String, Course> e : coursesDico.entrySet()) {
-		    System.out.print(e.getKey() + " = " + e.getValue().name + " | ");
+		    System.out.print(e.getKey() + " = " + e.getValue().getName() + " | ");
 		}
 	}
 
 	/**
-	 * @param courseCode
-	 * @param option
-	 * @param year
-	 * @return
+	 * @param courseCode courses code
+	 * @param option option
+	 * @param year year
+	 * @return thiscourse
 	 */
 	public int displayStat(final String courseCode,
 						   final int option, final int year) {
@@ -94,19 +95,19 @@ public class Teacher extends Person {
 	}
 
 	/**
-	 * @param passwd
-	 * @return
+	 * @param password password
+	 * @return password
 	 */
-	public boolean checkPasswd(final String passwd) {
-		return (this.passwd == passwd);
+	public boolean checkPasswd(final String password) {
+		return (this.passwd == password);
 	}
 
 	/**
-	 * @param courseCode
-	 * @param year
-	 * @param id
-	 * @param points
-	 * @return
+	 * @param courseCode course code
+	 * @param year year
+	 * @param id id
+	 * @param points points
+	 * @return int
 	 */
 	public int encodePoints(final String courseCode, final int year,
 							final int id, final int points) {
@@ -120,10 +121,10 @@ public class Teacher extends Person {
 	}
 
 	/**
-	 * @param code
-	 * @return
+	 * @param code code
+	 * @return courses dico
 	 */
 	public String getCourseName(final String code) {
-		return this.coursesDico.get(code).name;
+		return this.coursesDico.get(code).getName();
 	}
 }

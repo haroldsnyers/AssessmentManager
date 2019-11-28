@@ -27,33 +27,48 @@ public class Course implements Serializable {
 	/**
 	 *
 	 */
-	private Map<Integer, HashMap<Integer, Integer>>pointsDico;
+	private Map<Integer, HashMap<Integer, Integer>> pointsDico;
 
 	/**
 	 * @param courseName oleqfzo
 	 * @param courseCode kls(aefgjn
-	 * @param creditNumber seoqgnfq
+	 * @param numberCredit seoqgnfq
 	 */
-	public Course(final String courseName, final String courseCode, final int creditNumber) {
-		this.name = name;
-		this.code = code;
-		this.creditNumber = creditNumber;
+	public Course(final String courseName, final String courseCode, final int numberCredit) {
+		this.name = courseName;
+		this.code = courseCode;
+		this.creditNumber = numberCredit;
 		studentDico = new HashMap<Integer, Student>();
 		pointsDico = new HashMap<Integer, HashMap<Integer, Integer>>();
+	}
+
+	/**
+	 * @return
+	 */
+	public String getName() {
+		return this.name;
+	}
+
+	/**
+	 * @return code
+	 */
+	public String getCode() {
+		return this.code;
 	}
 
 	/**
 	 * @param stud ozrsqefn
 	 */
 	public void addStudent(final Student stud) {
-		this.studentDico.put(stud.ID_number, stud);
+		this.studentDico.put(stud.id, stud);
 	}
 
 	/**
-	 * @param ID oprszeqgp
+	 * @param id oprszeqgp
 	 * @return opzesgqj
 	 */
-	public boolean hasStudent(final int ID) { return this.studentDico.containsKey(ID);
+	public boolean hasStudent(final int id) {
+		return this.studentDico.containsKey(id);
 	}
 
 	/**
@@ -80,8 +95,7 @@ public class Course implements Serializable {
 			    System.out.println(e.getValue());
 			}
 			return 2; 
-		}
-		else {
+		} else {
 			System.out.println("Aucun points n'ont �t� encod� pour cette ann�e.");
 			return 1;
 		}
@@ -102,15 +116,17 @@ public class Course implements Serializable {
 
 			int score = 0;
 			for (int freq:frequencies) {
-				if (score < 10)System.out.print(' ');
+				int scoreLimit = 10;
+				if (score < scoreLimit) {
+					System.out.print(' ');
+				}
 				System.out.print(score);
 				printNtimes(freq, "-");
 				System.out.println(' ');
 				score++;
 			}
 			return 2; 
-		}
-		else {
+		} else {
 			System.out.println("Aucun points n'ont �t� encod�s pour cette ann�e.");
 			return 1;
 		}
