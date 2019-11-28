@@ -7,15 +7,15 @@ public class Student implements Serializable {
 	/**
 	 *
 	 */
-	public String name;
+	public final String name;
 	/**
 	 *
 	 */
-	public String surname;
+	public final String surname;
 	/**
 	 *
 	 */
-	public int ID_number;
+	public final int ID_number;
 
 	/**
 	 * @param name
