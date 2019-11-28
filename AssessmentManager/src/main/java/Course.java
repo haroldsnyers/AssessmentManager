@@ -14,15 +14,15 @@ public class Course implements Serializable {
 	/**
 	 *
 	 */
-	public String name;
+	public final String name;
 	/**
 	 *
 	 */
-	public String code;
+	public final String code;
 	/**
 	 *
 	 */
-	public int creditNumber;
+	public final int creditNumber;
 	/**
 	 *
 	 */
@@ -37,9 +37,9 @@ public class Course implements Serializable {
 	 * @param courseCode
 	 * @param creditNumber
 	 */
-	public Course(String courseName, String courseCode, int creditNumber) {
-		this.name = courseName;
-		this.code = courseCode;
+	public Course(final String courseName, final String courseCode, final int creditNumber) {
+		this.name = name;
+		this.code = code;
 		this.creditNumber = creditNumber;
 		studentDico = new HashMap<Integer, Student>();
 		pointsDico = new HashMap<Integer, HashMap<Integer, Integer>>();
@@ -48,7 +48,7 @@ public class Course implements Serializable {
 	/**
 	 * @param stud
 	 */
-	public void addStudent(Student stud) {
+	public void addStudent(final Student stud) {
 		this.studentDico.put(stud.ID_number, stud);
 	}
 
@@ -56,7 +56,7 @@ public class Course implements Serializable {
 	 * @param ID
 	 * @return
 	 */
-	public boolean hasStudent(int ID) {return this.studentDico.containsKey(ID);
+	public boolean hasStudent(final int ID) {return this.studentDico.containsKey(ID);
 	}
 
 	/**
@@ -64,7 +64,7 @@ public class Course implements Serializable {
 	 * @param id
 	 * @param points
 	 */
-	public void addPoints(int year, int id, int points) {
+	public void addPoints(final int year, final int id, final int points) {
 		if(!pointsDico.containsKey(year)) {
 			pointsDico.put(year, new HashMap<Integer, Integer>());
 		}
@@ -75,7 +75,7 @@ public class Course implements Serializable {
 	 * @param year
 	 * @return
 	 */
-	public int displayGraph(int year) {
+	public int displayGraph(final int year) {
 		if(pointsDico.containsKey(year)) {
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
 			    System.out.print("Stud " + e.getKey() + " : ");
@@ -94,7 +94,7 @@ public class Course implements Serializable {
 	 * @param year
 	 * @return
 	 */
-	public int displayHistogram(int year) {
+	public int displayHistogram(final int year) {
 		if(pointsDico.containsKey(year)) {
 			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()){
@@ -123,7 +123,7 @@ public class Course implements Serializable {
 	 * @param n
 	 * @param charact
 	 */
-	public void printNtimes(int n, String charact) {
+	public void printNtimes(final int n, final String charact) {
 		for(int i=0; i<n; i++) {
 			System.out.print(charact);
 		}
