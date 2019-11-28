@@ -2,7 +2,6 @@ import java.util.Scanner;
 import java.lang.*;
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -31,8 +30,8 @@ public class mainclass {
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi = new Student(jukiid, "Kirstein", "Julien");
-		Student JuGo = new Student(jugoid, "Gorjon", "Julien");
+		Student juki = new Student(jukiid, "Kirstein", "Julien");
+		Student jugo = new Student(jugoid, "Gorjon", "Julien");
 		Student yan = new Student(yanid, "Argyrakis", "yannis");
 		
 		javaCourse.addPoints(year, jugoid, note);
@@ -43,19 +42,19 @@ public class mainclass {
 		pythonCourse.addPoints(year, yanid, note4);
 		pythonCourse.addPoints(year, jukiid, note);
 		
-		combe.addStudToCourse(JuKi, "py");
-		combe.addStudToCourse(JuGo, "py");
+		combe.addStudToCourse(juki, "py");
+		combe.addStudToCourse(jugo, "py");
 		combe.addStudToCourse(yan, "py");
-		combe.addStudToCourse(JuKi, "ja");
-		combe.addStudToCourse(JuGo, "ja");
+		combe.addStudToCourse(juki, "ja");
+		combe.addStudToCourse(jugo, "ja");
 		combe.addStudToCourse(yan, "ja");
 
 
 		
 		School ecam = new School("Ecam", "Promenade de l'Alma");
 		ecam.addTeacher(combe);
-		ecam.addStudent(JuKi);
-		ecam.addStudent(JuGo);
+		ecam.addStudent(juki);
+		ecam.addStudent(jugo);
 		ecam.addStudent(yan);
 		
 		
@@ -96,11 +95,9 @@ public class mainclass {
 		// GET PROFESSEUR NAME HERE
 		Teacher teacher = combe;
 		System.out.println("Bonjour professeur !");
-		while (true)
-		{
+		while (true) {
 			//Course selection
-			while (state == 0)
-			{
+			while (state == 0) {
 				System.out.print("Entrez le code du cours qui vous intéresse : | ");
 				teacher.displayCourses();
 				System.out.println("");
@@ -113,8 +110,7 @@ public class mainclass {
 				}
 			}
 			
-			while (state == 1)
-			{
+			while (state == 1) {
 				System.out.println("Cours sélectionné : " + teacher.getCourseName(courseCode));
 				System.out.println("Que souhaitez vous faire ? (0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
 				
@@ -131,8 +127,7 @@ public class mainclass {
 					/*print ERROR*/  		
 				}
 			}
-			while (state == 2)
-			{
+			while (state == 2) {
 				if (options == 0) {
 					encoder(teacher, courseCode, sc);
 					state = 1;
@@ -141,15 +136,13 @@ public class mainclass {
 					state = statistics_display(teacher, courseCode, sc);
 					// Stats et affichage // at the end -> histogramme or graph
 				}
-				else
-					{
+				else {
 						state = 0; //Retour au menu du cours
 					}
 			}            
 		}
 	}
-	public static int encoder(Teacher teach, String courseCode, Scanner sc)
-	{
+	public static int encoder(Teacher teach, String courseCode, Scanner sc) {
 		int year;
 		int studID;
 		int points;
@@ -169,25 +162,20 @@ public class mainclass {
 			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistré avec succès !");
 			return 0;
 		}
-		else
-			{
+		else {
 				System.out.println("Erreur : L'étudiant " + studID + " ne participe pas à ce cours.");
 				return 1;
-			}
+			} 
 	}
-	
-	public static int statistics_display(Teacher teach, String courseCode, Scanner sc)
-	{
+	public static int statistics_display(Teacher teach, String courseCode, Scanner sc) {
 		int option = 0;
 		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
 		System.out.println("Affichage (0 = Graphe élèves | 1 = Histogramme des points | 2 = Evolution moyenne par année | 9 = Retour)");
 		option = checkIntInput(sc);
-		if (option == 9)
-		{
+		if (option == 9) {
 			return 1;
 		}
-		else if (option == 2)
-		{
+		else if (option == 2) {
 			System.out.println("Non disponible");
 			return 2;
 		}
@@ -209,6 +197,4 @@ public class mainclass {
 			}
 		}
 		return i;
-	}
-
-}
+	} }
