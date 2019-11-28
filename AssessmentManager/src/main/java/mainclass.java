@@ -12,26 +12,37 @@ import java.io.ObjectOutputStream;
 public class mainclass {
 
 	public static void main(String[] args) {
-		
-		Teacher combe = new Teacher(115, "Seb", "Combefis", "YOLO");
-		Course pythonCourse = new Course("Python", "py", 5);
-		Course javaCourse = new Course("Java", "ja", 6);
+		int id = 115;
+		int creditPython = 5;
+		int creditJava = 6;
+		int JuKiId = 16000;
+		int JuGoId = 16119;
+		int YanId = 16001;
+		int Year = 2019;
+        int Note = 12;
+        int Note2 = 16;
+        int Note3 = 10;
+        int Note4 = 8;
+        int nulle = 0;
+		Teacher combe = new Teacher(id, "Seb", "Combefis", "YOLO");
+		Course pythonCourse = new Course("Python", "py", creditPython);
+		Course javaCourse = new Course("Java", "ja", creditJava);
 		
 
 		combe.addCourse(pythonCourse);
 		combe.addCourse(javaCourse);
 		
-		Student JuKi = new Student("Kirstein", "Julien", 16000);
-		Student JuGo = new Student("Gorjon", "Julien", 16119);
-		Student Yan = new Student("Argyrakis", "Yannis", 16001);
+		Student JuKi = new Student("Kirstein", "Julien", JuKiId);
+		Student JuGo = new Student("Gorjon", "Julien", JuGoId);
+		Student Yan = new Student("Argyrakis", "Yannis", YanId);
 		
-		javaCourse.addPoints(2019, 16119, 16);
-		javaCourse.addPoints(2019, 16001, 15);
-		javaCourse.addPoints(2019, 16000, 10);
+		javaCourse.addPoints(Year, JuGoId, Note);
+		javaCourse.addPoints(Year, YanId, Note2);
+		javaCourse.addPoints(Year, JuKiId, Note3);
 		
-		pythonCourse.addPoints(2019, 16119, 14);
-		pythonCourse.addPoints(2019, 16001, 8);
-		pythonCourse.addPoints(2019, 16000, 18);
+		pythonCourse.addPoints(Year, JuGoId, Note2);
+		pythonCourse.addPoints(Year, YanId, Note4);
+		pythonCourse.addPoints(Year, JuKiId, Note);
 		
 		combe.addStudToCourse(JuKi, "py");
 		combe.addStudToCourse(JuGo, "py");
@@ -89,7 +100,7 @@ public class mainclass {
 		while (true)
 		{
 			//Course selection
-			while (state == 0)
+			while (state == nulle)
 			{
 				System.out.print("Entrez le code du cours qui vous intéresse : | ");
 				teacher.displayCourses();
