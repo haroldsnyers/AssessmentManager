@@ -8,9 +8,10 @@ import java.io.Serializable;
 public class Teacher extends Person {
 	private String passwd;
 	//public List<Course> courseList;
-	Map<String,Course>coursesDico; 
+	private Map<String,Course>coursesDico;
 	
-	public Teacher(String passwd) {
+	public Teacher(int ID, String firstName, String lastName, String passwd) {
+		super(ID, firstName, lastName);
 		this.passwd= passwd;
 		coursesDico=new HashMap<String,Course>();
 		//courseList=new ArrayList<Course>();

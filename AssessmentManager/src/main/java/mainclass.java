@@ -13,7 +13,7 @@ public class mainclass {
 
 	public static void main(String[] args) {
 		
-		Teacher combe=new Teacher("Combefis", 115, "YOLO");
+		Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
 		Course pythonCourse=new Course("Python","py",5);
 		Course javaCourse=new Course("Java","ja",6);
 		
@@ -77,13 +77,7 @@ public class mainclass {
 		} catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
 		}	
-		
-		
-		
-		
-		
-		
-		
+
 		String courseCode="";
 		int options = 0;
 		int state = 0;

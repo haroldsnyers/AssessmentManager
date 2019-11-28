@@ -11,6 +11,11 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class mainclassTest {
 
+    @Test
+    void testAddress(){
+        Address address = new Address ("Bxl",1000,"Rue du test",10);
+    }
+
 	@Test
 	void testIntInput(){
 		Random rand = new Random();
@@ -37,7 +42,8 @@ class mainclassTest {
 	@Test
 	void testEncoder()
 	{
-		Teacher combe=new Teacher("Combefis", 115, "YOLO");
+        Address address = new Address ("Bxl",1000,"Rue du test",10);
+        Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
 		Course csharpCourse=new Course("Csharp","c#",5);
 		combe.addCourse(csharpCourse);
 
@@ -54,7 +60,8 @@ class mainclassTest {
 
 	@Test
 	void testStatisticsDisplay(){
-		Teacher combe=new Teacher("Combefis", 115, "YOLO");
+        Address address = new Address ("Bxl",1000,"Rue du test",10);
+        Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
 		Course csharpCourse=new Course("Csharp","C#",5);
 
 		combe.addCourse(csharpCourse);
@@ -80,7 +87,8 @@ class mainclassTest {
 
     @Test
     void testSchool(){
-        Teacher combe=new Teacher("Combefis", 115, "YOLO");
+        Address address = new Address ("Bxl",1000,"Rue du test",10);
+        Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
 
         Student JuKi=new Student("Kirstein","Julien", 16000);
         Student JuGo=new Student("Gorjon","Julien", 16119);

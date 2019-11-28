@@ -6,7 +6,6 @@ public class Address implements Serializable {
     public String street;
     private int number;
     //public List<Course> courseList;
-    Map<String, Course> coursesDico;
 
     public Address(String city, int postalCode, String street, int number) {
         this.city = city;

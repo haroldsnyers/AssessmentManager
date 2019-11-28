@@ -21,14 +21,13 @@ public class Application {
 		
 		
 		// Teacher object
-		Teacher Combe=new Teacher("Combefis",14,"PWD");  
-		System.out.println(Combe.name);
+        Address address = new Address ("Bxl",1000,"Rue du test",10);
+		Teacher Combe=new Teacher(14,"seb","Combefis","PWD");
+		System.out.println(Combe.firstName);
 		// Teacher object list 
 		List<Teacher> myTeachers= new ArrayList<Teacher>();
 		myTeachers.add(Combe);
-		System.out.println(myTeachers.get(0).name);
-	
-
+		System.out.println(myTeachers.get(0).firstName);
 	}
 
 }
