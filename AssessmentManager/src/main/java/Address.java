@@ -23,10 +23,10 @@ public class Address implements Serializable {
     //public List<Course> courseList;
 
     /**
-     * @param city city
-     * @param postalCode postalCode
-     * @param street street
-     * @param number number
+     * @param city city City of the person
+     * @param postalCode postalCode Postalcode of the person
+     * @param street street Street name of the person
+     * @param number number Number of the house of the person
      */
     public Address(final String AdrCity, final int AdrPostalCode, final String AdrStreet, final int AdrNumber) {
         this.city = AdrCity;
@@ -36,28 +36,28 @@ public class Address implements Serializable {
     }
 
     /**
-     * @return city
+     * @return city City of the person
      */
     public String getCity() {
         return this.city;
     }
 
     /**
-     * @return postalCode
+     * @return postalCode Postalcode of the person
      */
     public int getPostalCode() {
         return this.postalCode;
     }
 
     /**
-     * @return street
+     * @return street Street name of the person
      */
     public String getStreet() {
         return this.street;
     }
 
     /**
-     * @return number
+     * @return number Number of the house of the person
      */
     public int getNumber() {
         return this.number;
