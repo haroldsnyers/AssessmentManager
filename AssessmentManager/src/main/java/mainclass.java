@@ -83,7 +83,7 @@ public class mainclass {
 		while (true) {
 			//Course selection
 			while (state == 0) {
-				System.out.print("Entrez le code du cours qui vous intéresse : | ");
+				System.out.print("Entrez le code du cours qui vous intï¿½resse : | ");
 				teacher.displayCourses();
 				System.out.println("");
 				String codeInput = sc.nextLine();
@@ -95,7 +95,7 @@ public class mainclass {
 				}
 			}
 			while (state == 1) {
-				System.out.println("Cours sélectionné : " + teacher.getCourseName(courseCode));
+				System.out.println("Cours sï¿½lectionnï¿½ : " + teacher.getCourseName(courseCode));
 				System.out.println("Que souhaitez vous faire ? (0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
 				options = checkIntInput(sc);
 			  	if (options == 0 || options == 1 || options == 9) {
@@ -124,15 +124,22 @@ public class mainclass {
 			}            
 		}
 	}
+
+    /**
+     * @param teach
+     * @param courseCode
+     * @param sc
+     * @return
+     */
 	public static int encoder(Teacher teach, String courseCode, Scanner sc) {
 		int year;
 		int studID;
 		int points;
 
 		System.out.println("--- Code du cours  : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
-		System.out.println("Année académique :");
+		System.out.println("Annï¿½e acadï¿½mique :");
 		year = checkIntInput(sc);
-		System.out.println("Matricule de l'étudiant :");
+		System.out.println("Matricule de l'ï¿½tudiant :");
 		studID = checkIntInput(sc);
 		System.out.println("Points obtenus : /20");
 		points = checkIntInput(sc);
@@ -140,18 +147,25 @@ public class mainclass {
 			points = 20;
 		}
 		if (teach.encodePoints(courseCode, year, studID, points) == 0) {
-			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistré avec succès !");
+			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistrï¿½ avec succï¿½s !");
 			return 0;
 		}
 		else {
-				System.out.println("Erreur : L'étudiant " + studID + " ne participe pas à ce cours.");
+				System.out.println("Erreur : L'ï¿½tudiant " + studID + " ne participe pas ï¿½ ce cours.");
 				return 1;
 			} 
 	}
+
+    /**
+     * @param teach
+     * @param courseCode
+     * @param sc
+     * @return
+     */
 	public static int statistics_display(Teacher teach, String courseCode, Scanner sc) {
 		int option = 0;
 		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
-		System.out.println("Affichage (0 = Graphe élèves | 1 = Histogramme des points | 2 = Evolution moyenne par année | 9 = Retour)");
+		System.out.println("Affichage (0 = Graphe ï¿½lï¿½ves | 1 = Histogramme des points | 2 = Evolution moyenne par annï¿½e | 9 = Retour)");
 		option = checkIntInput(sc);
 		if (option == 9) {
 			return 1;
@@ -160,10 +174,15 @@ public class mainclass {
 			System.out.println("Non disponible");
 			return 2;
 		}
-		System.out.println("Entrez l'année qui vous intéresse :");
+		System.out.println("Entrez l'annï¿½e qui vous intï¿½resse :");
 		int year = checkIntInput(sc);
 		return teach.displayStat(courseCode, option, year);
 	}
+
+    /**
+     * @param sc
+     * @return
+     */
 	public static int checkIntInput(Scanner sc) {
 		int i = 0;
 		boolean validated = false;
