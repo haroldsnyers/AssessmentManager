@@ -10,7 +10,7 @@ import java.io.ObjectOutputStream;
 
 public class mainclass {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		final int id = 115;
 		final int creditPython = 5;
 		final int creditJava = 6;
@@ -131,7 +131,7 @@ public class mainclass {
      * @param sc
      * @return
      */
-	public static int encoder(Teacher teach, String courseCode, Scanner sc) {
+	public static int encoder(final Teacher teach, final String courseCode, final Scanner sc) {
 		int year;
 		int studID;
 		int points;
