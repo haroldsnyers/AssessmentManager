@@ -25,8 +25,8 @@ public class School implements Serializable {
 	  private Map<Integer, Teacher>teachersDico;
 
 	/**
-	 * @param name
-	 * @param address
+	 * @param name Name of the school
+	 * @param address Address of the school
 	 */
 	  public School(final String name, final String address) {
 		  this.name = name;
@@ -37,14 +37,14 @@ public class School implements Serializable {
 	  }
 
 	/**
-	 * @param teach
+	 * @param teach Teacher of the teacher class
 	 */
 	  public void addTeacher(final Teacher teach) {
 		  this.teachersDico.put(teach.id, teach);
 	  }
 
 	/**
-	 * @param stud
+	 * @param stud Student of the student class
 	 */
 	  public void addStudent(final Student stud) {
 		  this.studentsDico.put(stud.id, stud);
