@@ -30,8 +30,8 @@ class mainclassTest {
 	@Test
 	void testLink() throws FileNotFoundException {
 
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is1 = loader.getResourceAsStream("encoder_data.txt");//
+		
+		InputStream is1 = this.getClass().getClassLoader().getResourceAsStream("encoder_data.txt");
  		Scanner is = new Scanner(is1);
  		System.out.println(is1);
 		System.out.println(is);
@@ -50,8 +50,8 @@ class mainclassTest {
 		Student Yan=new Student(16133, "Argyrakis","Yannis");
 		combe.addStudToCourse(Yan, "c#");
 
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("encoder_data.txt");
+		
+		InputStream is = this.getClass().getClassLoader().getResourceAsStream("encoder_data.txt");
 		Scanner in = new Scanner(is);
 
 		assertEquals(mainclass.encoder(combe,"c#",in),0);
@@ -79,8 +79,8 @@ class mainclassTest {
 		combe.addStudToCourse(JuGo, "C#");
 		combe.addStudToCourse(Yan, "C#");
 
-		ClassLoader loader = Thread.currentThread().getContextClassLoader();
-		InputStream is = loader.getResourceAsStream("data_stats.txt");
+		
+		InputStream is = this.getClass().getClassLoader().getResourceAsStream("data_stats.txt");
 		Scanner in = new Scanner(is);
 		assertEquals(mainclass.statistics_display(combe,"C#", in),2);
 	}

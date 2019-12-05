@@ -1,6 +1,8 @@
 mainclass.class
 Address.class
 Course.class
+Assessment.class
 Person.class
+School.class
 Student.class
 Teacher.class
