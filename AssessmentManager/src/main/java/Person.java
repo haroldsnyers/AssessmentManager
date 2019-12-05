@@ -22,9 +22,9 @@ public class Person implements Serializable {
     private Address address;
 
     /**
-     * @param id
-     * @param firstName
-     * @param lastName
+     * @param id Id of the person
+     * @param firstName Firstname of the person
+     * @param lastName Lastname of the person
      */
     public Person(final int id, final String firstName, final String lastName) {
         this.id = id;
