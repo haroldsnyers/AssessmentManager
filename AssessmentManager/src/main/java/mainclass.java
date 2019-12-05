@@ -10,6 +10,9 @@ import java.io.ObjectOutputStream;
 
 public class mainclass {
 
+	/**
+	 * @param args
+	 */
 	public static void main(final String[] args) {
 		final int id = 115;
 		final int creditPython = 5;
@@ -126,9 +129,9 @@ public class mainclass {
 	}
 
     /**
-     * @param teach
-     * @param courseCode
-     * @param sc
+     * @param teach Teacher of the teacher class
+     * @param courseCode Id of the course
+     * @param sc heu
      * @return
      */
 	public static int encoder(final Teacher teach, final String courseCode, final Scanner sc) {
@@ -156,12 +159,12 @@ public class mainclass {
 			} 
 	}
 
-    /**
-     * @param teach
-     * @param courseCode
-     * @param sc
-     * @return
-     */
+	/**
+	 * @param teach Teacher of the teacher class
+	 * @param courseCode Id of the course
+	 * @param sc heu
+	 * @return
+	 */
 	public static int statistics_display(Teacher teach, String courseCode, Scanner sc) {
 		int option = 0;
 		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
@@ -180,7 +183,7 @@ public class mainclass {
 	}
 
     /**
-     * @param sc
+     * @param sc heu
      * @return
      */
 	public static int checkIntInput(Scanner sc) {
