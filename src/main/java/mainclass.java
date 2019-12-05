@@ -56,7 +56,8 @@ public class mainclass {
 		// HERE IS THE WAy TO DO IT
 		// SAVE THE OBJECT ECAM
 		try {
-			FileOutputStream f = new FileOutputStream(new File("myObjects.txt"));
+			FileOutputStream f = new FileOutputStream(
+					new File("myObjects.txt"));
 			ObjectOutputStream o = new ObjectOutputStream(f);
 			// Write objects to file
 			o.writeObject(ecam);
@@ -88,8 +89,8 @@ public class mainclass {
 		while (true) {
 			//Course selection
 			while (state == 0) {
-				System.out.print("Entrez le code du cours qui vous int�resse" +
-						" : | ");
+				System.out.print("Entrez le code du cours qui vous " +
+						"int�resse" + " : | ");
 				teacher.displayCourses();
 				System.out.println("");
 				String codeInput = sc.nextLine();
