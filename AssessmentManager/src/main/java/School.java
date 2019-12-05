@@ -50,11 +50,17 @@ public class School implements Serializable {
 		  this.studentsDico.put(stud.id, stud);
 	  }
 
+	/**
+	 * @return
+	 */
 	  public Map<Integer, Student> getStudents() {
 	  	return this.studentsDico;
 	  }
 
-	public Map<Integer, Teacher> getTeachers() {
+	/**
+	 * @return 
+	 */
+	  public Map<Integer, Teacher> getTeachers() {
 		return this.teachersDico;
 	}
 }
