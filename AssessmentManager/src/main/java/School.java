@@ -58,7 +58,7 @@ public class School implements Serializable {
 	  }
 
 	/**
-	 * @return 
+	 * @return
 	 */
 	  public Map<Integer, Teacher> getTeachers() {
 		return this.teachersDico;
