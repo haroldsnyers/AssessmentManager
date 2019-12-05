@@ -1,4 +1,16 @@
 -------------------------------------------------------------------------------
 Test set: mainclassTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.071 s - in mainclassTest
+Tests run: 6, Failures: 0, Errors: 3, Skipped: 0, Time elapsed: 0.065 s <<< FAILURE! - in mainclassTest
+testEncoder  Time elapsed: 0.031 s  <<< ERROR!
+java.lang.NullPointerException
+	at mainclassTest.testEncoder(mainclassTest.java:55)
+
+testLink  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.NullPointerException
+	at mainclassTest.testLink(mainclassTest.java:35)
+
+testStatisticsDisplay  Time elapsed: 0.003 s  <<< ERROR!
+java.lang.NullPointerException
+	at mainclassTest.testStatisticsDisplay(mainclassTest.java:84)
+

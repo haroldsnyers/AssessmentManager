@@ -65,6 +65,11 @@
                 <version>2.22.1</version>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/test/ressources</directory>
+            </resource>
+        </resources>
     </build>
 
 

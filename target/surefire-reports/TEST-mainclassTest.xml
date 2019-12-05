@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.071" tests="6" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="mainclassTest" time="0.065" tests="6" errors="3" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -17,7 +17,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="US"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\Harold\AppData\Local\Temp\surefire18399691892964293652\surefirebooter3699628856554476355.jar C:\Users\Harold\AppData\Local\Temp\surefire18399691892964293652 2019-12-05T11-25-22_696-jvmRun1 surefire17993549050814457538tmp surefire_017547575339756687853tmp"/>
+    <property name="sun.java.command" value="C:\Users\Harold\AppData\Local\Temp\surefire5578051513221678984\surefirebooter12331063733851113492.jar C:\Users\Harold\AppData\Local\Temp\surefire5578051513221678984 2019-12-05T11-44-15_430-jvmRun1 surefire17554194412524925164tmp surefire_011067049312236089777tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\Harold\Documents\GitHub\Ecam_MA1\test_driven_development\AssessmentManager\AssessmentManager\target\test-classes;C:\Users\Harold\Documents\GitHub\Ecam_MA1\test_driven_development\AssessmentManager\AssessmentManager\target\classes;C:\Users\Harold\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;C:\Users\Harold\.m2\repository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;C:\Users\Harold\.m2\repository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;C:\Users\Harold\.m2\repository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;C:\Users\Harold\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;C:\Users\Harold\.m2\repository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;C:\Users\Harold\.m2\repository\org\junit\jupiter\junit-jupiter\5.6.0-M1\junit-jupiter-5.6.0-M1.jar;C:\Users\Harold\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0-M1\junit-jupiter-params-5.6.0-M1.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\Harold\AppData\Local\Temp\surefire18399691892964293652\surefirebooter3699628856554476355.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\Harold\AppData\Local\Temp\surefire5578051513221678984\surefirebooter12331063733851113492.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="11.0.2+9-LTS"/>
@@ -61,10 +61,22 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="testEncoder" classname="mainclassTest" time="0.039"/>
+  <testcase name="testEncoder" classname="mainclassTest" time="0.031">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at mainclassTest.testEncoder(mainclassTest.java:55)
+</error>
+  </testcase>
   <testcase name="testAddress" classname="mainclassTest" time="0"/>
-  <testcase name="testLink" classname="mainclassTest" time="0.003"/>
-  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0.011"/>
-  <testcase name="testIntInput" classname="mainclassTest" time="0.001"/>
+  <testcase name="testLink" classname="mainclassTest" time="0.002">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at mainclassTest.testLink(mainclassTest.java:35)
+</error>
+  </testcase>
+  <testcase name="testStatisticsDisplay" classname="mainclassTest" time="0.003">
+    <error type="java.lang.NullPointerException">java.lang.NullPointerException
+	at mainclassTest.testStatisticsDisplay(mainclassTest.java:84)
+</error>
+  </testcase>
+  <testcase name="testIntInput" classname="mainclassTest" time="0.008"/>
   <testcase name="testSchool" classname="mainclassTest" time="0.004"/>
 </testsuite>
