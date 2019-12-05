@@ -7,15 +7,15 @@ public class Person implements Serializable {
     /**
      *
      */
-    private final int id;
+    final int id;
     /**
      *
      */
-    private final String firstName;
+    final String firstName;
     /**
      *
      */
-    private final String lastName;
+    final String lastName;
     /**
      *
      */
