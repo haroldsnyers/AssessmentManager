@@ -18,11 +18,11 @@ public class School implements Serializable {
 	/**
 	 *
 	 */
-	  private Map<Integer, Student>studentsDico;
+	  private Map<Integer, Student> studentsDico;
 	/**
 	 *
 	 */
-	  private Map<Integer, Teacher>teachersDico;
+	  private Map<Integer, Teacher> teachersDico;
 
 	/**
 	 * @param name Name of the school

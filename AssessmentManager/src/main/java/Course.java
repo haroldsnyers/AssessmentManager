@@ -8,6 +8,7 @@ import java.io.Serializable;
  *
  */
 public class Course implements Serializable {
+
 	/**
 	 *
 	 */
@@ -34,7 +35,10 @@ public class Course implements Serializable {
 	 * @param courseCode kls(aefgjn
 	 * @param numberCredit seoqgnfq
 	 */
-	public Course(final String courseName, final String courseCode, final int numberCredit) {
+	public Course(
+	        final String courseName,
+            final String courseCode,
+            final int numberCredit) {
 		this.name = courseName;
 		this.code = courseCode;
 		this.creditNumber = numberCredit;
@@ -43,7 +47,7 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @return
+	 * @return name
 	 */
 	public String getName() {
 		return this.name;
@@ -89,14 +93,19 @@ public class Course implements Serializable {
 	 */
 	public int displayGraph(final int year) {
 		if (pointsDico.containsKey(year)) {
-			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
+			for (
+			        Map.Entry<Integer, Integer> e :
+                    pointsDico.get(year).entrySet()
+            ) {
 			    System.out.print("Stud " + e.getKey() + " : ");
 			    printNtimes(e.getValue(), "-");
 			    System.out.println(e.getValue());
 			}
-			return 2; 
+			return 2;
 		} else {
-			System.out.println("Aucun points n'ont �t� encod� pour cette ann�e.");
+			System.out.println(
+			        "Aucun points n'ont �t� encod� pour cette ann�e."
+            );
 			return 1;
 		}
 	}
@@ -107,8 +116,13 @@ public class Course implements Serializable {
 	 */
 	public int displayHistogram(final int year) {
 		if (pointsDico.containsKey(year)) {
-			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
-			for (Map.Entry<Integer, Integer> e : pointsDico.get(year).entrySet()) {
+			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+			};
+			for (
+			        Map.Entry<Integer, Integer> e :
+                    pointsDico.get(year).entrySet()
+            ) {
 			    frequencies[e.getValue() - 1]++;
 			}
 
@@ -116,7 +130,7 @@ public class Course implements Serializable {
 
 			int score = 0;
 			for (int freq:frequencies) {
-				int scoreLimit = 10;
+				final int scoreLimit = 10;
 				if (score < scoreLimit) {
 					System.out.print(' ');
 				}
@@ -125,9 +139,11 @@ public class Course implements Serializable {
 				System.out.println(' ');
 				score++;
 			}
-			return 2; 
+			return 2;
 		} else {
-			System.out.println("Aucun points n'ont �t� encod�s pour cette ann�e.");
+			System.out.println(
+			        "Aucun points n'ont �t� encod�s pour cette ann�e."
+            );
 			return 1;
 		}
 	}
