@@ -23,16 +23,20 @@ public class Address implements Serializable {
     //public List<Course> courseList;
 
     /**
-     * @param city city City of the person
-     * @param postalCode postalCode Postalcode of the person
-     * @param street street Street name of the person
-     * @param number number Number of the house of the person
+     * @param adrCity city City of the person
+     * @param adrPostalCode postalCode Postalcode of the person
+     * @param adrStreet street Street name of the person
+     * @param adrNumber number Number of the house of the person
      */
-    public Address(final String AdrCity, final int AdrPostalCode, final String AdrStreet, final int AdrNumber) {
-        this.city = AdrCity;
-        this.postalCode = AdrPostalCode;
-        this.street = AdrStreet;
-        this.number = AdrNumber;
+    public Address(
+            final String adrCity,
+            final int adrPostalCode,
+            final String adrStreet,
+            final int adrNumber) {
+        this.city = adrCity;
+        this.postalCode = adrPostalCode;
+        this.street = adrStreet;
+        this.number = adrNumber;
     }
 
     /**
