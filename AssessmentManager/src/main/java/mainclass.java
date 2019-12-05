@@ -62,7 +62,8 @@ public class mainclass {
 			o.writeObject(ecam);
 			o.close();
 			f.close();
-		} catch (IOException e) {
+		}
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 		// LOAD THE OBJECT ECAM
@@ -72,7 +73,8 @@ public class mainclass {
 			School ECAM = (School) ois.readObject();
 			ois.close();
 			is.close();
-		} catch (ClassNotFoundException | IOException e) {
+		}
+		catch (ClassNotFoundException | IOException e) {
 			e.printStackTrace();
 		}
 		String courseCode = "";
@@ -94,7 +96,8 @@ public class mainclass {
 				if (!teacher.checkCourseCode(codeInput)) {
 					System.out.println("Erreur, veuillez entrez un " +
 							"code valide !");
-				} else {
+				}
+				else {
 					state = 1;
 					courseCode = codeInput;
 				}
@@ -109,10 +112,12 @@ public class mainclass {
 			  	if (options == 0 || options == 1 || options == 9) {
 			  		if (options == 9) {
 			  			state = 0;
-			  		} else {
+			  		}
+			  		else {
 						state = 2;
 			  		}
-				} else {
+				}
+			  	else {
 					System.out.println("Erreur, veuillez entrez une " +
 							"commande valide !");
 					/*print ERROR*/  		
@@ -129,7 +134,7 @@ public class mainclass {
 				}
 				else {
 						state = 0; //Retour au menu du cours
-					}
+				}
 			}            
 		}
 	}
@@ -215,4 +220,5 @@ public class mainclass {
 			}
 		}
 		return i;
-	} }
+	}
+}
