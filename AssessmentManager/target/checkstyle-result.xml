@@ -1,22 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.19">
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Address.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Address.java">
 <error line="1" severity="error" message="Le fichier package-info.java est manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocPackageCheck"/>
-<error line="26" column="8" severity="error" message="Balise Javadoc @param inutilisée pour &apos;city&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="27" column="8" severity="error" message="Balise Javadoc @param inutilisée pour &apos;postalCode&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="28" column="8" severity="error" message="Balise Javadoc @param inutilisée pour &apos;street&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="29" column="8" severity="error" message="Balise Javadoc @param inutilisée pour &apos;number&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="31" severity="error" message="La ligne excède 80 caractères (trouvé 112)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="31" column="33" severity="error" message="Balise Javadoc @param manquante pour &apos;AdrCity&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="31" column="33" severity="error" message="Le nom &apos;AdrCity&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="31" column="52" severity="error" message="Balise Javadoc @param manquante pour &apos;AdrPostalCode&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="31" column="52" severity="error" message="Le nom &apos;AdrPostalCode&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="31" column="80" severity="error" message="Balise Javadoc @param manquante pour &apos;AdrStreet&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="31" column="80" severity="error" message="Le nom &apos;AdrStreet&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
-<error line="31" column="101" severity="error" message="Balise Javadoc @param manquante pour &apos;AdrNumber&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="31" column="101" severity="error" message="Le nom &apos;AdrNumber&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Assessment.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Assessment.java">
 <error line="10" column="26" severity="error" message="Le nom &apos;Result&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
 <error line="14" column="27" severity="error" message="Le nom &apos;AcademicYear&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.StaticVariableNameCheck"/>
 <error line="20" column="35" severity="error" message="&apos;Result&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
@@ -26,7 +13,7 @@
 <error line="20" column="56" severity="error" message="Balise Javadoc @param manquante pour &apos;AcademicYear&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="20" column="56" severity="error" message="Le nom &apos;AcademicYear&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.ParameterNameCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Course.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Course.java">
 <error line="11" column="1" severity="error" message="Le fichier contient des caractères de tabulation (ce n&apos;est que la première occurence)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="37" severity="error" message="La ligne excède 80 caractères (trouvé 97)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="48" severity="error" message="Balise Javadoc @return manquante." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
@@ -39,7 +26,7 @@
 <error line="128" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 <error line="130" severity="error" message="La ligne excède 80 caractères (trouvé 95)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\mainclass.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\mainclass.java">
 <error line="2" severity="error" message="L&apos;utilisation des import.* est prohibé - java.lang.*." source="com.puppycrawl.tools.checkstyle.checks.imports.AvoidStarImportCheck"/>
 <error line="2" column="1" severity="error" message="Import redondant car la classe importée est située dans le package java.lang - java.lang.*." source="com.puppycrawl.tools.checkstyle.checks.imports.RedundantImportCheck"/>
 <error line="11" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocTypeCheck"/>
@@ -47,7 +34,6 @@
 <error line="11" column="14" severity="error" message="Le nom &apos;mainclass&apos; n&apos;est pas conforme à l&apos;expression &apos;^[A-Z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.TypeNameCheck"/>
 <error line="13" column="1" severity="error" message="Le fichier contient des caractères de tabulation (ce n&apos;est que la première occurence)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="13" column="9" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="13" column="33" severity="error" message="Le paramètre args devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="56" severity="error" message="La ligne excède 80 caractères (trouvé 93)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="67" severity="error" message="La ligne excède 80 caractères (trouvé 82)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="69" column="32" severity="error" message="Le nom &apos;ECAM&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.LocalVariableNameCheck"/>
@@ -66,35 +52,39 @@
 <error line="120" column="33" severity="error" message="&apos;}&apos; à la colonne 5 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
 <error line="122" severity="error" message="La ligne excède 80 caractères (trouvé 84)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="124" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="127" severity="error" message="La ligne excède 80 caractères (trouvé 81)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="127" column="9" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="127" column="35" severity="error" message="Le paramètre teach devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="127" column="50" severity="error" message="Le paramètre courseCode devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="127" column="69" severity="error" message="Le paramètre sc devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="132" severity="error" message="La ligne excède 80 caractères (trouvé 112)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="139" column="30" severity="error" message="&apos;20&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="140" column="34" severity="error" message="&apos;20&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="143" severity="error" message="La ligne excède 80 caractères (trouvé 124)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="145" column="17" severity="error" message="&apos;}&apos; à la colonne 3 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
-<error line="147" severity="error" message="La ligne excède 80 caractères (trouvé 118)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="149" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="151" severity="error" message="La ligne excède 80 caractères (trouvé 92)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="151" column="9" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="151" column="27" severity="error" message="Le nom &apos;statistics_display&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
-<error line="151" column="46" severity="error" message="Le paramètre teach devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="151" column="61" severity="error" message="Le paramètre courseCode devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="151" column="80" severity="error" message="Le paramètre sc devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="153" severity="error" message="La ligne excède 80 caractères (trouvé 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="154" severity="error" message="La ligne excède 80 caractères (trouvé 144)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
-<error line="156" column="31" severity="error" message="&apos;9&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
-<error line="158" column="17" severity="error" message="&apos;}&apos; à la colonne 3 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
-<error line="167" column="9" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
-<error line="167" column="41" severity="error" message="Le paramètre sc devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
-<error line="171" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
-<error line="174" column="25" severity="error" message="&apos;}&apos; à la colonne 4 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
-<error line="176" severity="error" message="La ligne excède 80 caractères (trouvé 90)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="134" severity="error" message="Balise Javadoc @return manquante." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="134" severity="error" message="La ligne excède 80 caractères (trouvé 99)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="134" column="49" severity="error" message="Balise Javadoc @param manquante pour &apos;teach&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="134" column="69" severity="error" message="Balise Javadoc @param manquante pour &apos;courseCode&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="134" column="95" severity="error" message="Balise Javadoc @param manquante pour &apos;sc&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="139" severity="error" message="La ligne excède 80 caractères (trouvé 112)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="146" column="30" severity="error" message="&apos;20&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="147" column="34" severity="error" message="&apos;20&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="150" severity="error" message="La ligne excède 80 caractères (trouvé 124)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="152" column="17" severity="error" message="&apos;}&apos; à la colonne 3 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="154" severity="error" message="La ligne excède 80 caractères (trouvé 118)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="156" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="165" severity="error" message="Balise Javadoc @return manquante." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="165" severity="error" message="La ligne excède 80 caractères (trouvé 92)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="165" column="27" severity="error" message="Le nom &apos;statistics_display&apos; n&apos;est pas conforme à l&apos;expression &apos;^[a-z][a-zA-Z0-9]*$&apos;." source="com.puppycrawl.tools.checkstyle.checks.naming.MethodNameCheck"/>
+<error line="165" column="46" severity="error" message="Le paramètre teach devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="165" column="54" severity="error" message="Balise Javadoc @param manquante pour &apos;teach&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="165" column="61" severity="error" message="Le paramètre courseCode devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="165" column="68" severity="error" message="Balise Javadoc @param manquante pour &apos;courseCode&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="165" column="80" severity="error" message="Le paramètre sc devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="165" column="88" severity="error" message="Balise Javadoc @param manquante pour &apos;sc&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="167" severity="error" message="La ligne excède 80 caractères (trouvé 106)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="168" severity="error" message="La ligne excède 80 caractères (trouvé 144)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="170" column="31" severity="error" message="&apos;9&apos; devrait être défini comme une constante." source="com.puppycrawl.tools.checkstyle.checks.coding.MagicNumberCheck"/>
+<error line="172" column="17" severity="error" message="&apos;}&apos; à la colonne 3 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="186" severity="error" message="Balise Javadoc @return manquante." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="186" column="41" severity="error" message="Le paramètre sc devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
+<error line="186" column="49" severity="error" message="Balise Javadoc @param manquante pour &apos;sc&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="190" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
+<error line="193" column="25" severity="error" message="&apos;}&apos; à la colonne 4 devrait être sur la même ligne que la prochaine partie d&apos;une instruction multi-bloc (celui qui contient directement plusieurs blocs : if/else-if/else, do/while ou try/catch/finally)." source="com.puppycrawl.tools.checkstyle.checks.blocks.RightCurlyCheck"/>
+<error line="195" severity="error" message="La ligne excède 80 caractères (trouvé 90)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Person.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Person.java">
 <error line="10" column="15" severity="error" message="La variable &apos;id&apos; devrait être privée et avoir des accesseurs." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="14" column="18" severity="error" message="La variable &apos;firstName&apos; devrait être privée et avoir des accesseurs." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
 <error line="18" column="18" severity="error" message="La variable &apos;lastName&apos; devrait être privée et avoir des accesseurs." source="com.puppycrawl.tools.checkstyle.checks.design.VisibilityModifierCheck"/>
@@ -105,7 +95,7 @@
 <error line="29" column="70" severity="error" message="&apos;lastName&apos; masque un attribut." source="com.puppycrawl.tools.checkstyle.checks.coding.HiddenFieldCheck"/>
 <error line="29" column="70" severity="error" message="Balise Javadoc @param manquante pour &apos;lastName&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\School.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\School.java">
 <error line="9" column="1" severity="error" message="Le fichier contient des caractères de tabulation (ce n&apos;est que la première occurence)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="21" column="39" severity="error" message="&apos;&gt;&apos; est suivi par un caractère illégal." source="com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"/>
 <error line="25" column="39" severity="error" message="&apos;&gt;&apos; est suivi par un caractère illégal." source="com.puppycrawl.tools.checkstyle.checks.whitespace.GenericWhitespaceCheck"/>
@@ -116,8 +106,12 @@
 <error line="36" severity="error" message="Line has trailing spaces." source="com.puppycrawl.tools.checkstyle.checks.regexp.RegexpSinglelineCheck"/>
 <error line="42" column="48" severity="error" message="Balise Javadoc @param manquante pour &apos;teach&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 <error line="49" column="48" severity="error" message="Balise Javadoc @param manquante pour &apos;stud&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="53" column="11" severity="error" message="Classe &apos;School&apos; ressemble conçu pour extension (peut être sous-), mais la méthode&apos;getStudents&apos; na pas javadoc qui explique comment le faire en toute sécurité. Si la classe est pas conçue pour envisager de faire la classe &apos;{0}&apos; finale ou de faire la méthode &apos;{1}&apos; annotation static/final/abstract/empty, ou lajout de permis pour la méthode." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="53" column="11" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="9" severity="error" message="Classe &apos;School&apos; ressemble conçu pour extension (peut être sous-), mais la méthode&apos;getTeachers&apos; na pas javadoc qui explique comment le faire en toute sécurité. Si la classe est pas conçue pour envisager de faire la classe &apos;{0}&apos; finale ou de faire la méthode &apos;{1}&apos; annotation static/final/abstract/empty, ou lajout de permis pour la méthode." source="com.puppycrawl.tools.checkstyle.checks.design.DesignForExtensionCheck"/>
+<error line="57" column="9" severity="error" message="Commentaire Javadoc manquant." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Student.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Student.java">
 <error line="1" column="8" severity="error" message="Import inutilisé - java.io.Serializable." source="com.puppycrawl.tools.checkstyle.checks.imports.UnusedImportsCheck"/>
 <error line="8" column="1" severity="error" message="Le fichier contient des caractères de tabulation (ce n&apos;est que la première occurence)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="13" column="24" severity="error" message="Le paramètre id devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
@@ -127,7 +121,7 @@
 <error line="13" column="45" severity="error" message="Le paramètre surname devrait être final." source="com.puppycrawl.tools.checkstyle.checks.FinalParametersCheck"/>
 <error line="13" column="52" severity="error" message="Balise Javadoc @param manquante pour &apos;surname&apos;." source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
 </file>
-<file name="D:\Users\dtheo\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Teacher.java">
+<file name="C:\Users\m_sca\OneDrive\Documents\GitHub\AssessmentManager\AssessmentManager\src\main\java\Teacher.java">
 <error line="12" column="1" severity="error" message="Le fichier contient des caractères de tabulation (ce n&apos;est que la première occurence)." source="com.puppycrawl.tools.checkstyle.checks.whitespace.FileTabCharacterCheck"/>
 <error line="51" severity="error" message="La ligne excède 80 caractères (trouvé 90)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
 <error line="59" severity="error" message="La ligne excède 80 caractères (trouvé 86)." source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
