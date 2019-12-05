@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dc9e2577-6f9d-412f-8791-06e4226c05a0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-mainclassTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-mainclassTest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/mainclassTest.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/mainclassTest.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/mainclassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/mainclassTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mainclassTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="40" selection-start-line="40" selection-end-line="40" />
+            <state relative-caret-position="269">
+              <caret line="33" column="80" selection-start-line="33" selection-start-column="80" selection-end-line="33" selection-end-column="80" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,6 +38,13 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/test/java/mainclassTest.java" />
+      </list>
+    </option>
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
@@ -73,30 +76,6 @@
             <path>
               <item name="AssessmentManager" type="b2602c69:ProjectViewProjectNode" />
               <item name="AssessmentManager" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AssessmentManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AssessmentManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AssessmentManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AssessmentManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AssessmentManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AssessmentManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="AssessmentManager" type="b2602c69:ProjectViewProjectNode" />
-              <item name="AssessmentManager" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -191,12 +170,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1637000" />
+    <option name="totallyTimeSpent" value="2110000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="64" y="-6" width="1478" height="877" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26408452" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26408452" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -207,7 +187,7 @@
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32931727" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
