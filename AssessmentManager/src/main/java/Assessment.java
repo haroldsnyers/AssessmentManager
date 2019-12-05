@@ -7,18 +7,18 @@ public class Assessment implements Serializable {
     /**
      *
      */
-    private static float Result;
+    private static float result;
     /**
      *
      */
-    private static String AcademicYear;
+    private static String academicYear;
 
     /**
-     * @param Result
-     * @param AcademicYear
+     * @param theResult receive a result
+     * @param theAcademicYear receive a academic year
      */
-    public Assessment(final float Result, final String AcademicYear) {
-        this.Result = Result;
-        this.AcademicYear = AcademicYear;
+    public Assessment(final float theResult, final String theAcademicYear) {
+        this.result = theResult;
+        this.academicYear = theAcademicYear;
     }
 }
