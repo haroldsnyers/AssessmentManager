@@ -86,12 +86,14 @@ public class mainclass {
 		while (true) {
 			//Course selection
 			while (state == 0) {
-				System.out.print("Entrez le code du cours qui vous int�resse : | ");
+				System.out.print("Entrez le code du cours qui vous int�resse" +
+						" : | ");
 				teacher.displayCourses();
 				System.out.println("");
 				String codeInput = sc.nextLine();
 				if (!teacher.checkCourseCode(codeInput)) {
-					System.out.println("Erreur, veuillez entrez un code valide !");
+					System.out.println("Erreur, veuillez entrez un " +
+							"code valide !");
 				} else {
 					state = 1;
 					courseCode = codeInput;
@@ -101,7 +103,8 @@ public class mainclass {
 				System.out.println("Cours s�lectionn� : " +
 						teacher.getCourseName(courseCode));
 				System.out.println("Que souhaitez vous faire ? " +
-						"(0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
+						"(0 = Encoder points | 1 = Stats & Affichage |" +
+						" 9 = Retour)");
 				options = checkIntInput(sc);
 			  	if (options == 0 || options == 1 || options == 9) {
 			  		if (options == 9) {
@@ -110,7 +113,8 @@ public class mainclass {
 						state = 2;
 			  		}
 				} else {
-					System.out.println("Erreur, veuillez entrez une commande valide !");
+					System.out.println("Erreur, veuillez entrez une " +
+							"commande valide !");
 					/*print ERROR*/  		
 				}
 			}
@@ -137,7 +141,8 @@ public class mainclass {
      * @return
      */
 	public static int encoder(final Teacher teach,
-							  final String courseCode, final Scanner sc) {
+							  final String courseCode,
+							  final Scanner sc) {
 		int year;
 		int studID;
 		int points;
@@ -205,7 +210,8 @@ public class mainclass {
 				validated = true;
 			}
 			catch (Exception e) {
-				System.out.println("Erreur, veuillez entrez un nombre !");
+				System.out.println("Erreur, veuillez entrez un " +
+						"nombre !");
 			}
 		}
 		return i;
