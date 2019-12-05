@@ -47,6 +47,14 @@ public class School implements Serializable {
 	 * @param stud
 	 */
 	  public void addStudent(final Student stud) {
-		  this.studentsDico.put(stud.ID_number, stud);
+		  this.studentsDico.put(stud.id, stud);
 	  }
+
+	  public Map<Integer, Student> getStudents() {
+	  	return this.studentsDico;
+	  }
+
+	public Map<Integer, Teacher> getTeachers() {
+		return this.teachersDico;
+	}
 }

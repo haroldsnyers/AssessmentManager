@@ -47,7 +47,7 @@ class mainclassTest {
 		Course csharpCourse=new Course("Csharp","c#",5);
 		combe.addCourse(csharpCourse);
 
-		Student Yan=new Student("Argyrakis","Yannis", 16133);
+		Student Yan=new Student(16133, "Argyrakis","Yannis");
 		combe.addStudToCourse(Yan, "c#");
 
 		ClassLoader loader = Thread.currentThread().getContextClassLoader();
@@ -66,9 +66,9 @@ class mainclassTest {
 
 		combe.addCourse(csharpCourse);
 
-		Student JuKi=new Student("Kirstein","Julien", 16000);
-		Student JuGo=new Student("Gorjon","Julien", 16119);
-		Student Yan=new Student("Argyrakis","Yannis", 16001);
+		Student JuKi=new Student(16000,"Julien", "Kirstein");
+		Student JuGo=new Student(16119,"Julien" ,"Gorjon");
+		Student Yan=new Student(16001,"Yannis", "Argyrakis");
 
 		csharpCourse.addPoints(2019, 16119, 16);
 		csharpCourse.addPoints(2019, 16001, 15);
@@ -90,9 +90,9 @@ class mainclassTest {
         Address address = new Address ("Bxl",1000,"Rue du test",10);
         Teacher combe=new Teacher(115, "Seb","Combefis", "YOLO");
 
-        Student JuKi=new Student("Kirstein","Julien", 16000);
-        Student JuGo=new Student("Gorjon","Julien", 16119);
-        Student Yan=new Student("Argyrakis","Yannis", 16001);
+		Student JuKi=new Student(16000,"Julien", "Kirstein");
+		Student JuGo=new Student(16119,"Julien" ,"Gorjon");
+		Student Yan=new Student(16001,"Yannis", "Argyrakis");
 
         School ECAM = new School("ECAM", "place de l'alma");
 
@@ -102,8 +102,8 @@ class mainclassTest {
 
         ECAM.addTeacher(combe);
 
-        System.out.println(ECAM.teachersDico);
-        System.out.println(ECAM.studentsDico);
+        System.out.println(ECAM.getTeachers());
+        System.out.println(ECAM.getStudents());
         System.out.println("\n");
     }
 }
