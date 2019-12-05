@@ -8,10 +8,9 @@ import java.io.Serializable;
  *
  */
 public class Course implements Serializable {
-
-	/**
-	 *
-	 */
+    /**
+     *
+     */
 	private final String name;
 	/**
 	 *
@@ -31,9 +30,9 @@ public class Course implements Serializable {
 	private Map<Integer, HashMap<Integer, Integer>> pointsDico;
 
 	/**
-	 * @param courseName oleqfzo
-	 * @param courseCode kls(aefgjn
-	 * @param numberCredit seoqgnfq
+	 * @param courseName String course name
+	 * @param courseCode String course code
+	 * @param numberCredit String number of credit
 	 */
 	public Course(
 	        final String courseName,
@@ -61,24 +60,24 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param stud ozrsqefn
+	 * @param stud Student
 	 */
 	public void addStudent(final Student stud) {
 		this.studentDico.put(stud.id, stud);
 	}
 
 	/**
-	 * @param id oprszeqgp
-	 * @return opzesgqj
+	 * @param id id of student
+	 * @return list of students
 	 */
 	public boolean hasStudent(final int id) {
 		return this.studentDico.containsKey(id);
 	}
 
 	/**
-	 * @param year zsrolkaegj
-	 * @param id zrsgb-eodlv
-	 * @param points ksjegqb
+	 * @param year int year
+	 * @param id int id of student
+	 * @param points int points
 	 */
 	public void addPoints(final int year, final int id, final int points) {
 		if (!pointsDico.containsKey(year)) {
@@ -88,14 +87,14 @@ public class Course implements Serializable {
 	}
 
 	/**
-	 * @param year zesqfkj
-	 * @return kjqzejbf
+	 * @param year int year
+	 * @return a number
 	 */
 	public int displayGraph(final int year) {
 		if (pointsDico.containsKey(year)) {
 			for (
-			        Map.Entry<Integer, Integer> e :
-                    pointsDico.get(year).entrySet()
+			        Map.Entry<Integer, Integer> e
+                    : pointsDico.get(year).entrySet()
             ) {
 			    System.out.print("Stud " + e.getKey() + " : ");
 			    printNtimes(e.getValue(), "-");
@@ -104,24 +103,28 @@ public class Course implements Serializable {
 			return 2;
 		} else {
 			System.out.println(
-			        "Aucun points n'ont �t� encod� pour cette ann�e."
+			        "Aucun points n'ont �t�" +
+                    " encod� pour cette ann�e."
             );
 			return 1;
 		}
 	}
 
 	/**
-	 * @param year iuezrfh
-	 * @return soeiqyfjn
+	 * @param year int year
+	 * @return a number
 	 */
 	public int displayHistogram(final int year) {
 		if (pointsDico.containsKey(year)) {
-			int[] frequencies = new int[] {0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
-                    0, 0, 0, 0, 0, 0, 0, 0, 0, 0
+			int[] frequencies = new int[] {
+			        0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0,
+                    0, 0, 0, 0, 0, 0
 			};
 			for (
-			        Map.Entry<Integer, Integer> e :
-                    pointsDico.get(year).entrySet()
+			        Map.Entry<Integer, Integer> e
+                    : pointsDico.get(year).entrySet()
             ) {
 			    frequencies[e.getValue() - 1]++;
 			}
@@ -142,15 +145,16 @@ public class Course implements Serializable {
 			return 2;
 		} else {
 			System.out.println(
-			        "Aucun points n'ont �t� encod�s pour cette ann�e."
+			        "Aucun points n'ont �t�" +
+                    " encod�s pour cette ann�e."
             );
 			return 1;
 		}
 	}
 
 	/**
-	 * @param n zersfgv(kljn
-	 * @param charact sdvkj
+	 * @param n int n for points
+	 * @param charact the character to print to symbolise points
 	 */
 	public void printNtimes(final int n, final String charact) {
 		for (int i = 0; i < n; i++) {
