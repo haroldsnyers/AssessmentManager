@@ -10,6 +10,9 @@ import java.io.ObjectOutputStream;
 
 public class mainclass {
 
+	/**
+	 * @param args
+	 */
 	public static void main(final String[] args) {
 		final int id = 115;
 		final int creditPython = 5;
@@ -95,8 +98,10 @@ public class mainclass {
 				}
 			}
 			while (state == 1) {
-				System.out.println("Cours s�lectionn� : " + teacher.getCourseName(courseCode));
-				System.out.println("Que souhaitez vous faire ? (0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
+				System.out.println("Cours s�lectionn� : " +
+						teacher.getCourseName(courseCode));
+				System.out.println("Que souhaitez vous faire ? " +
+						"(0 = Encoder points | 1 = Stats & Affichage | 9 = Retour)");
 				options = checkIntInput(sc);
 			  	if (options == 0 || options == 1 || options == 9) {
 			  		if (options == 9) {
@@ -126,17 +131,19 @@ public class mainclass {
 	}
 
     /**
-     * @param teach
-     * @param courseCode
-     * @param sc
+     * @param teach Teacher of the teacher class
+     * @param courseCode Id of the course
+     * @param sc heu
      * @return
      */
-	public static int encoder(final Teacher teach, final String courseCode, final Scanner sc) {
+	public static int encoder(final Teacher teach,
+							  final String courseCode, final Scanner sc) {
 		int year;
 		int studID;
 		int points;
 
-		System.out.println("--- Code du cours  : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
+		System.out.println("--- Code du cours  : " +
+				courseCode + " ---"); // CHERCHE LE STRING DU COURS
 		System.out.println("Ann�e acad�mique :");
 		year = checkIntInput(sc);
 		System.out.println("Matricule de l'�tudiant :");
@@ -147,25 +154,31 @@ public class mainclass {
 			points = 20;
 		}
 		if (teach.encodePoints(courseCode, year, studID, points) == 0) {
-			System.out.println(studID + " - " + points + "/20 " + " - " + year + " - enregistr� avec succ�s !");
+			System.out.println(studID + " - " + points + "/20 " +
+					" - " + year + " - enregistr� avec succ�s !");
 			return 0;
 		}
 		else {
-				System.out.println("Erreur : L'�tudiant " + studID + " ne participe pas � ce cours.");
+				System.out.println("Erreur : L'�tudiant " + studID +
+						" ne participe pas � ce cours.");
 				return 1;
 			} 
 	}
 
-    /**
-     * @param teach
-     * @param courseCode
-     * @param sc
-     * @return
-     */
-	public static int statistics_display(Teacher teach, String courseCode, Scanner sc) {
+	/**
+	 * @param teach Teacher of the teacher class
+	 * @param courseCode Id of the course
+	 * @param sc heu
+	 * @return
+	 */
+	public static int statistics_display(Teacher teach,
+										 String courseCode, Scanner sc) {
 		int option = 0;
-		System.out.println("--- Cours ID : " + courseCode + " ---"); // CHERCHE LE STRING DU COURS
-		System.out.println("Affichage (0 = Graphe �l�ves | 1 = Histogramme des points | 2 = Evolution moyenne par ann�e | 9 = Retour)");
+		System.out.println("--- Cours ID : " +
+				courseCode + " ---"); // CHERCHE LE STRING DU COURS
+		System.out.println("Affichage (0 = Graphe �l�ves | " +
+				"1 = Histogramme des points | " +
+				"2 = Evolution moyenne par ann�e | 9 = Retour)");
 		option = checkIntInput(sc);
 		if (option == 9) {
 			return 1;
@@ -180,7 +193,7 @@ public class mainclass {
 	}
 
     /**
-     * @param sc
+     * @param sc heu
      * @return
      */
 	public static int checkIntInput(Scanner sc) {
